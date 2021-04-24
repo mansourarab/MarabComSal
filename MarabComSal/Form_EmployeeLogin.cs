@@ -34,7 +34,7 @@ namespace MarabComSal
 
                 EmployeeLoginClass.AccountId = AccountId;
 
-                Home Hform = new Home();
+                Homepage Hform = new Homepage();
                 Hform.Show();
 
             }
@@ -43,6 +43,13 @@ namespace MarabComSal
                 Lbl_Status.ForeColor = System.Drawing.Color.Red;
                 Lbl_Status.Text = "Invalid Info";
             }
+        }
+
+        private void Btn_Back_Click(object sender, EventArgs e)
+        {
+            Form_UserTypeInfo getback = new Form_UserTypeInfo();
+            getback.Show();
+
         }
     }
 }
