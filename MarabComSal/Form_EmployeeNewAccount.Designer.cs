@@ -30,6 +30,8 @@ namespace MarabComSal
         private void InitializeComponent()
         {
             this.Gb_Createnewemp = new System.Windows.Forms.GroupBox();
+            this.Tb_Department = new System.Windows.Forms.TextBox();
+            this.Lbl_Department = new System.Windows.Forms.Label();
             this.Btn_Back = new System.Windows.Forms.Button();
             this.Btn_Checkavailability = new System.Windows.Forms.Button();
             this.lbl_status = new System.Windows.Forms.Label();
@@ -49,8 +51,6 @@ namespace MarabComSal
             this.Lbl_Password = new System.Windows.Forms.Label();
             this.Lbl_Username = new System.Windows.Forms.Label();
             this.Lbl_Fullname = new System.Windows.Forms.Label();
-            this.Tb_Department = new System.Windows.Forms.TextBox();
-            this.Lbl_Department = new System.Windows.Forms.Label();
             this.Gb_Createnewemp.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,6 +85,24 @@ namespace MarabComSal
             this.Gb_Createnewemp.TabStop = false;
             this.Gb_Createnewemp.Text = "Create New Employee Account";
             // 
+            // Tb_Department
+            // 
+            this.Tb_Department.Font = new System.Drawing.Font("Courier New", 9F);
+            this.Tb_Department.Location = new System.Drawing.Point(111, 201);
+            this.Tb_Department.Name = "Tb_Department";
+            this.Tb_Department.Size = new System.Drawing.Size(186, 21);
+            this.Tb_Department.TabIndex = 39;
+            // 
+            // Lbl_Department
+            // 
+            this.Lbl_Department.AutoSize = true;
+            this.Lbl_Department.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.Lbl_Department.Location = new System.Drawing.Point(7, 201);
+            this.Lbl_Department.Name = "Lbl_Department";
+            this.Lbl_Department.Size = new System.Drawing.Size(98, 19);
+            this.Lbl_Department.TabIndex = 38;
+            this.Lbl_Department.Text = "Department:";
+            // 
             // Btn_Back
             // 
             this.Btn_Back.Font = new System.Drawing.Font("Tahoma", 10F);
@@ -94,6 +112,7 @@ namespace MarabComSal
             this.Btn_Back.TabIndex = 37;
             this.Btn_Back.Text = "Back to Login";
             this.Btn_Back.UseVisualStyleBackColor = true;
+            this.Btn_Back.Click += new System.EventHandler(this.Btn_Back_Click);
             // 
             // Btn_Checkavailability
             // 
@@ -104,6 +123,7 @@ namespace MarabComSal
             this.Btn_Checkavailability.TabIndex = 36;
             this.Btn_Checkavailability.Text = "Check Availability!";
             this.Btn_Checkavailability.UseVisualStyleBackColor = true;
+            this.Btn_Checkavailability.Click += new System.EventHandler(this.Btn_Checkavailability_Click);
             // 
             // lbl_status
             // 
@@ -122,6 +142,7 @@ namespace MarabComSal
             this.Btn_Create.TabIndex = 34;
             this.Btn_Create.Text = "Create";
             this.Btn_Create.UseVisualStyleBackColor = true;
+            this.Btn_Create.Click += new System.EventHandler(this.Btn_Create_Click);
             // 
             // Tb_Phone
             // 
@@ -264,24 +285,6 @@ namespace MarabComSal
             this.Lbl_Fullname.Size = new System.Drawing.Size(86, 19);
             this.Lbl_Fullname.TabIndex = 19;
             this.Lbl_Fullname.Text = "Full Name:";
-            // 
-            // Tb_Department
-            // 
-            this.Tb_Department.Font = new System.Drawing.Font("Courier New", 9F);
-            this.Tb_Department.Location = new System.Drawing.Point(111, 201);
-            this.Tb_Department.Name = "Tb_Department";
-            this.Tb_Department.Size = new System.Drawing.Size(186, 21);
-            this.Tb_Department.TabIndex = 39;
-            // 
-            // Lbl_Department
-            // 
-            this.Lbl_Department.AutoSize = true;
-            this.Lbl_Department.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.Lbl_Department.Location = new System.Drawing.Point(7, 201);
-            this.Lbl_Department.Name = "Lbl_Department";
-            this.Lbl_Department.Size = new System.Drawing.Size(98, 19);
-            this.Lbl_Department.TabIndex = 38;
-            this.Lbl_Department.Text = "Department:";
             // 
             // Form_EmployeeNewAccount
             // 
