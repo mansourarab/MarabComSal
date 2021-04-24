@@ -62,6 +62,7 @@ namespace MarabComSal
                 {
                     MessageBox.Show("Your account was Created successfully!");
                     Form_EmployeeLogin forwardtologin = new Form_EmployeeLogin();
+                    this.Close();
                     forwardtologin.Show();
                 }
             }
@@ -70,6 +71,7 @@ namespace MarabComSal
         private void Btn_Back_Click(object sender, EventArgs e)
         {
             Form_EmployeeLogin backtologin = new Form_EmployeeLogin();
+            this.Close();
             backtologin.Show();
         }
 

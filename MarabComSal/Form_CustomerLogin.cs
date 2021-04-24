@@ -35,6 +35,7 @@ namespace MarabComSal
                 Class_CustomerLogin.AccountId = AccountId;
 
                 Homepage Hform = new Homepage();
+                this.Close();
                 Hform.Show();
 
             }
@@ -48,6 +49,7 @@ namespace MarabComSal
         private void Btn_Back_Click(object sender, EventArgs e)
         {
             Form_UserTypeInfo getback = new Form_UserTypeInfo();
+            this.Close();
             getback.Show();
             
         }
@@ -55,6 +57,7 @@ namespace MarabComSal
         private void Linlbl_Newaccount_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Form_CustomerNewAccount newaccount = new Form_CustomerNewAccount();
+            this.Close();
             newaccount.Show();
 
         }
