@@ -46,14 +46,65 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Class_CustomerCheckAvailability.cs" />
+    <Compile Include="Class_CustomerLogin.cs" />
+    <Compile Include="Class_CustomerNewAccount.cs" />
+    <Compile Include="Class_EmployeeCheckAvailability.cs" />
+    <Compile Include="Class_EmployeeLogin.cs" />
+    <Compile Include="Class_EmployeeNewAccount.cs" />
+    <Compile Include="Homepage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Homepage.Designer.cs">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_CustomerLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_CustomerLogin.Designer.cs">
+      <DependentUpon>Form_CustomerLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_CustomerNewAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_CustomerNewAccount.Designer.cs">
+      <DependentUpon>Form_CustomerNewAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_EmployeeLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_EmployeeLogin.Designer.cs">
+      <DependentUpon>Form_EmployeeLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_EmployeeNewAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_EmployeeNewAccount.Designer.cs">
+      <DependentUpon>Form_EmployeeNewAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_UserTypeInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_UserTypeInfo.Designer.cs">
+      <DependentUpon>Form_UserTypeInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_CustomerLogin.resx">
+      <DependentUpon>Form_CustomerLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_CustomerNewAccount.resx">
+      <DependentUpon>Form_CustomerNewAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_EmployeeLogin.resx">
+      <DependentUpon>Form_EmployeeLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_EmployeeNewAccount.resx">
+      <DependentUpon>Form_EmployeeNewAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_UserTypeInfo.resx">
+      <DependentUpon>Form_UserTypeInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

@@ -23,6 +23,7 @@ namespace MarabComSal
 
         public int? CheckUsernameandEmailAvalability(string username, string email, out int? status)
         {
+            status = null;
             channel.Open();
 
             que.CommandText = "SP_CheckUsernameandEmailAvalability";
