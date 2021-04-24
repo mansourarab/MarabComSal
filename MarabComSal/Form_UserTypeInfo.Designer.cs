@@ -30,10 +30,10 @@ namespace MarabComSal
         private void InitializeComponent()
         {
             this.Gb_Pleasechoose = new System.Windows.Forms.GroupBox();
+            this.Btn_Out = new System.Windows.Forms.Button();
             this.Btn_Customer = new System.Windows.Forms.Button();
             this.Btn_Employee = new System.Windows.Forms.Button();
             this.Lbl_Welcome = new System.Windows.Forms.Label();
-            this.Btn_Out = new System.Windows.Forms.Button();
             this.Gb_Pleasechoose.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,6 +50,17 @@ namespace MarabComSal
             this.Gb_Pleasechoose.TabStop = false;
             this.Gb_Pleasechoose.Text = "Please choose your user type for login:";
             // 
+            // Btn_Out
+            // 
+            this.Btn_Out.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.Btn_Out.Location = new System.Drawing.Point(107, 126);
+            this.Btn_Out.Name = "Btn_Out";
+            this.Btn_Out.Size = new System.Drawing.Size(89, 28);
+            this.Btn_Out.TabIndex = 6;
+            this.Btn_Out.Text = "Out";
+            this.Btn_Out.UseVisualStyleBackColor = true;
+            this.Btn_Out.Click += new System.EventHandler(this.Btn_Out_Click);
+            // 
             // Btn_Customer
             // 
             this.Btn_Customer.Location = new System.Drawing.Point(107, 85);
@@ -58,6 +69,7 @@ namespace MarabComSal
             this.Btn_Customer.TabIndex = 1;
             this.Btn_Customer.Text = "Customer";
             this.Btn_Customer.UseVisualStyleBackColor = true;
+            this.Btn_Customer.Click += new System.EventHandler(this.Btn_Customer_Click);
             // 
             // Btn_Employee
             // 
@@ -67,6 +79,7 @@ namespace MarabComSal
             this.Btn_Employee.TabIndex = 0;
             this.Btn_Employee.Text = "Employee";
             this.Btn_Employee.UseVisualStyleBackColor = true;
+            this.Btn_Employee.Click += new System.EventHandler(this.Btn_Employee_Click);
             // 
             // Lbl_Welcome
             // 
@@ -78,16 +91,6 @@ namespace MarabComSal
             this.Lbl_Welcome.TabIndex = 4;
             this.Lbl_Welcome.Text = "Welcome to Mansour Arab Company!";
             // 
-            // Btn_Out
-            // 
-            this.Btn_Out.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.Btn_Out.Location = new System.Drawing.Point(107, 126);
-            this.Btn_Out.Name = "Btn_Out";
-            this.Btn_Out.Size = new System.Drawing.Size(89, 28);
-            this.Btn_Out.TabIndex = 6;
-            this.Btn_Out.Text = "Out";
-            this.Btn_Out.UseVisualStyleBackColor = true;
-            // 
             // Form_UserTypeInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -97,6 +100,7 @@ namespace MarabComSal
             this.Controls.Add(this.Lbl_Welcome);
             this.Name = "Form_UserTypeInfo";
             this.Text = "Form_UserTypeInfo";
+            this.Load += new System.EventHandler(this.Form_UserTypeInfo_Load);
             this.Gb_Pleasechoose.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
