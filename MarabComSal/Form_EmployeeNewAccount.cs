@@ -20,7 +20,7 @@ namespace MarabComSal
         int? status;
         private void Btn_Checkavailability_Click(object sender, EventArgs e)
         {
-            EmployeeCheckAvailabilityClass check = new EmployeeCheckAvailabilityClass();
+            Class_EmployeeCheckAvailability check = new Class_EmployeeCheckAvailability();
             int? checkresult = check.CheckUsernameandEmailAvalability(Tb_Username.Text, Tb_Password.Text, out int? status);
 
             if (checkresult == 2)
