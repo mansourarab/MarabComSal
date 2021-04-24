@@ -1,7 +1,7 @@
 ﻿
 namespace MarabComSal
 {
-    partial class Form_UpdateEmailandPassword
+    partial class Form_UpdatePassword
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@ namespace MarabComSal
         private void InitializeComponent()
         {
             this.Gb_Updatepassword = new System.Windows.Forms.GroupBox();
-            this.Lbl_Oldpassword = new System.Windows.Forms.Label();
-            this.Lbl_Enternewpass = new System.Windows.Forms.Label();
-            this.Btn_Savechanges = new System.Windows.Forms.Button();
-            this.Btn_Back = new System.Windows.Forms.Button();
-            this.Tb_OldpassData = new System.Windows.Forms.TextBox();
-            this.Tb_NewpassData = new System.Windows.Forms.TextBox();
             this.Lbl_status = new System.Windows.Forms.Label();
+            this.Tb_NewpassData = new System.Windows.Forms.TextBox();
+            this.Tb_OldpassData = new System.Windows.Forms.TextBox();
+            this.Btn_Back = new System.Windows.Forms.Button();
+            this.Btn_Savechanges = new System.Windows.Forms.Button();
+            this.Lbl_Enternewpass = new System.Windows.Forms.Label();
+            this.Lbl_Oldpassword = new System.Windows.Forms.Label();
             this.Gb_Updatepassword.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,35 +57,29 @@ namespace MarabComSal
             this.Gb_Updatepassword.TabStop = false;
             this.Gb_Updatepassword.Text = "Update Passwrod";
             // 
-            // Lbl_Oldpassword
+            // Lbl_status
             // 
-            this.Lbl_Oldpassword.AutoSize = true;
-            this.Lbl_Oldpassword.Font = new System.Drawing.Font("Tahoma", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.Lbl_Oldpassword.Location = new System.Drawing.Point(23, 42);
-            this.Lbl_Oldpassword.Name = "Lbl_Oldpassword";
-            this.Lbl_Oldpassword.Size = new System.Drawing.Size(149, 17);
-            this.Lbl_Oldpassword.TabIndex = 0;
-            this.Lbl_Oldpassword.Text = "Enter Old Password:";
+            this.Lbl_status.AutoSize = true;
+            this.Lbl_status.Location = new System.Drawing.Point(136, 133);
+            this.Lbl_status.Name = "Lbl_status";
+            this.Lbl_status.Size = new System.Drawing.Size(0, 19);
+            this.Lbl_status.TabIndex = 7;
             // 
-            // Lbl_Enternewpass
+            // Tb_NewpassData
             // 
-            this.Lbl_Enternewpass.AutoSize = true;
-            this.Lbl_Enternewpass.Font = new System.Drawing.Font("Tahoma", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.Lbl_Enternewpass.Location = new System.Drawing.Point(23, 83);
-            this.Lbl_Enternewpass.Name = "Lbl_Enternewpass";
-            this.Lbl_Enternewpass.Size = new System.Drawing.Size(157, 17);
-            this.Lbl_Enternewpass.TabIndex = 1;
-            this.Lbl_Enternewpass.Text = "Enter New Password:";
+            this.Tb_NewpassData.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.Tb_NewpassData.Location = new System.Drawing.Point(189, 83);
+            this.Tb_NewpassData.Name = "Tb_NewpassData";
+            this.Tb_NewpassData.Size = new System.Drawing.Size(129, 24);
+            this.Tb_NewpassData.TabIndex = 6;
             // 
-            // Btn_Savechanges
+            // Tb_OldpassData
             // 
-            this.Btn_Savechanges.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.Btn_Savechanges.Location = new System.Drawing.Point(243, 191);
-            this.Btn_Savechanges.Name = "Btn_Savechanges";
-            this.Btn_Savechanges.Size = new System.Drawing.Size(133, 30);
-            this.Btn_Savechanges.TabIndex = 3;
-            this.Btn_Savechanges.Text = "Save Changes";
-            this.Btn_Savechanges.UseVisualStyleBackColor = true;
+            this.Tb_OldpassData.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.Tb_OldpassData.Location = new System.Drawing.Point(189, 42);
+            this.Tb_OldpassData.Name = "Tb_OldpassData";
+            this.Tb_OldpassData.Size = new System.Drawing.Size(129, 24);
+            this.Tb_OldpassData.TabIndex = 5;
             // 
             // Btn_Back
             // 
@@ -97,38 +91,44 @@ namespace MarabComSal
             this.Btn_Back.Text = "Back";
             this.Btn_Back.UseVisualStyleBackColor = true;
             // 
-            // Tb_OldpassData
+            // Btn_Savechanges
             // 
-            this.Tb_OldpassData.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.Tb_OldpassData.Location = new System.Drawing.Point(189, 42);
-            this.Tb_OldpassData.Name = "Tb_OldpassData";
-            this.Tb_OldpassData.Size = new System.Drawing.Size(129, 24);
-            this.Tb_OldpassData.TabIndex = 5;
+            this.Btn_Savechanges.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.Btn_Savechanges.Location = new System.Drawing.Point(243, 191);
+            this.Btn_Savechanges.Name = "Btn_Savechanges";
+            this.Btn_Savechanges.Size = new System.Drawing.Size(133, 30);
+            this.Btn_Savechanges.TabIndex = 3;
+            this.Btn_Savechanges.Text = "Save Changes";
+            this.Btn_Savechanges.UseVisualStyleBackColor = true;
             // 
-            // Tb_NewpassData
+            // Lbl_Enternewpass
             // 
-            this.Tb_NewpassData.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.Tb_NewpassData.Location = new System.Drawing.Point(189, 83);
-            this.Tb_NewpassData.Name = "Tb_NewpassData";
-            this.Tb_NewpassData.Size = new System.Drawing.Size(129, 24);
-            this.Tb_NewpassData.TabIndex = 6;
+            this.Lbl_Enternewpass.AutoSize = true;
+            this.Lbl_Enternewpass.Font = new System.Drawing.Font("Tahoma", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.Lbl_Enternewpass.Location = new System.Drawing.Point(23, 83);
+            this.Lbl_Enternewpass.Name = "Lbl_Enternewpass";
+            this.Lbl_Enternewpass.Size = new System.Drawing.Size(157, 17);
+            this.Lbl_Enternewpass.TabIndex = 1;
+            this.Lbl_Enternewpass.Text = "Enter New Password:";
             // 
-            // Lbl_status
+            // Lbl_Oldpassword
             // 
-            this.Lbl_status.AutoSize = true;
-            this.Lbl_status.Location = new System.Drawing.Point(136, 133);
-            this.Lbl_status.Name = "Lbl_status";
-            this.Lbl_status.Size = new System.Drawing.Size(0, 19);
-            this.Lbl_status.TabIndex = 7;
+            this.Lbl_Oldpassword.AutoSize = true;
+            this.Lbl_Oldpassword.Font = new System.Drawing.Font("Tahoma", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.Lbl_Oldpassword.Location = new System.Drawing.Point(23, 42);
+            this.Lbl_Oldpassword.Name = "Lbl_Oldpassword";
+            this.Lbl_Oldpassword.Size = new System.Drawing.Size(149, 17);
+            this.Lbl_Oldpassword.TabIndex = 0;
+            this.Lbl_Oldpassword.Text = "Enter Old Password:";
             // 
-            // Form_UpdateEmailandPassword
+            // Form_UpdatePassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(490, 346);
             this.Controls.Add(this.Gb_Updatepassword);
-            this.Name = "Form_UpdateEmailandPassword";
-            this.Text = "Form_UpdateEmailandPassword";
+            this.Name = "Form_UpdatePassword";
+            this.Text = "Form_UpdatePassword";
             this.Gb_Updatepassword.ResumeLayout(false);
             this.Gb_Updatepassword.PerformLayout();
             this.ResumeLayout(false);

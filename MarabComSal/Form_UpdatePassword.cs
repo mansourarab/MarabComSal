@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MarabComSal
 {
-    public partial class Form_UpdateEmailandPassword : Form
+    public partial class Form_UpdatePassword : Form
     {
-        public Form_UpdateEmailandPassword()
+        public Form_UpdatePassword()
         {
             InitializeComponent();
         }
