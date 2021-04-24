@@ -23,7 +23,7 @@ namespace MarabComSal
 
         public int? CheckUsernameandEmailAvalability(string username, string email, out int? status)
         {
-            status = null;
+            
             channel.Open();
 
             que.CommandText = "SP_CheckUsernameandEmailAvalability";
@@ -33,6 +33,8 @@ namespace MarabComSal
             que.Parameters.AddWithValue("@username", username);
             que.Parameters.AddWithValue("@email", username);
             que.Parameters.Add("@result", SqlDbType.Int).Direction = ParameterDirection.Output;
+            status = Convert.ToInt32(que.Parameters["@result"].Value);
+
 
             channel.Close();
             return status;

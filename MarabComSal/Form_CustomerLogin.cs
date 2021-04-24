@@ -49,6 +49,7 @@ namespace MarabComSal
         {
             Form_UserTypeInfo getback = new Form_UserTypeInfo();
             getback.Show();
+            
         }
 
         private void Linlbl_Newaccount_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
