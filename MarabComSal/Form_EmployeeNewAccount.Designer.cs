@@ -294,6 +294,7 @@ namespace MarabComSal
             this.Controls.Add(this.Gb_Createnewemp);
             this.Name = "Form_EmployeeNewAccount";
             this.Text = "Form_EmployeeNewAccount";
+            this.Load += new System.EventHandler(this.Form_EmployeeNewAccount_Load);
             this.Gb_Createnewemp.ResumeLayout(false);
             this.Gb_Createnewemp.PerformLayout();
             this.ResumeLayout(false);
