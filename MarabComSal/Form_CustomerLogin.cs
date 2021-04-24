@@ -24,15 +24,15 @@ namespace MarabComSal
 
         private void Btn_Login_Click(object sender, EventArgs e)
         {
-            CustomerLoginClass clogin = new CustomerLoginClass();
+            Class_CustomerLogin newlogin = new Class_CustomerLogin();
             int? AccountId;
-            int result = clogin.CheckUser(Tb_Username.Text, Tb_Password.Text, out AccountId);
+            int result =newlogin.CheckUser(Tb_Username.Text, Tb_Password.Text, out AccountId);
             if (result == 1)
             {
                 lbl_status.ForeColor = System.Drawing.Color.Green;
                 lbl_status.Text = "Loggied in Successfully!";
 
-                CustomerLoginClass.AccountId = AccountId;
+                Class_CustomerLogin.AccountId = AccountId;
 
                 Homepage Hform = new Homepage();
                 Hform.Show();
