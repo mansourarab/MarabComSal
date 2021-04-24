@@ -60,14 +60,14 @@ namespace MarabComSal
 
             else
             {
-                CustomerNewAccountClass newacc = new CustomerNewAccountClass();
+                Class_CustomerNewAccount newacc = new Class_CustomerNewAccount();
                 int CustomerNewAccount = newacc.CustomerNewAccount(tb_fullname.Text, Rbtn_Male.Checked, tb_phone.Text, tb_address.Text, tb_username.Text, tb_password.Text, tb_email.Text);
 
                 if (CustomerNewAccount != 0)
                 {
                     MessageBox.Show("Your account was Created successfully!");
-                    CustomerLoginForm window = new CustomerLoginForm();
-                    window.Show();
+                    Form_CustomerLogin forwardtologin = new Form_CustomerLogin();
+                    forwardtologin.Show();
                 }
             }
         }
@@ -77,5 +77,7 @@ namespace MarabComSal
             Form_CustomerLogin backtologin = new Form_CustomerLogin();
             backtologin.Show();
         }
+
+        
     }
 }

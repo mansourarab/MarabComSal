@@ -80,6 +80,7 @@ namespace MarabComSal
             this.Gb_Createnewcustomer.TabIndex = 1;
             this.Gb_Createnewcustomer.TabStop = false;
             this.Gb_Createnewcustomer.Text = "Create New Customer Account:";
+            
             // 
             // btn_back
             // 
