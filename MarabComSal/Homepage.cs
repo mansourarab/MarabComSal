@@ -16,10 +16,21 @@ namespace MarabComSal
         {
             InitializeComponent();
         }
+        int roro = 0;
+        private void admintool(int roro)
+        {
+            if (roro == 0)
+            {
+                adminstratorAuthoritiesToolStripMenuItem.Visible = false;
+
+            }
+        }
 
         private void Homepage_Load(object sender, EventArgs e)
         {
-
+           
         }
+
+
     }
 }

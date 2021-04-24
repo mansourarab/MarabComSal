@@ -154,6 +154,7 @@ namespace MarabComSal
             this.adminstratorAuthoritiesToolStripMenuItem.Name = "adminstratorAuthoritiesToolStripMenuItem";
             this.adminstratorAuthoritiesToolStripMenuItem.Size = new System.Drawing.Size(158, 20);
             this.adminstratorAuthoritiesToolStripMenuItem.Text = "Adminstrator Authorities";
+            
             // 
             // newEmployeeToolStripMenuItem
             // 
