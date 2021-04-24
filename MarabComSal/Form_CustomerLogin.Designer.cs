@@ -30,7 +30,7 @@ namespace MarabComSal
         private void InitializeComponent()
         {
             this.Gb_Cuslog = new System.Windows.Forms.GroupBox();
-            this.Linlbl_Newaccount = new System.Windows.Forms.LinkLabel();
+            this.Btn_Back = new System.Windows.Forms.Button();
             this.lbl_status = new System.Windows.Forms.Label();
             this.Btn_Login = new System.Windows.Forms.Button();
             this.Tb_Password = new System.Windows.Forms.TextBox();
@@ -38,7 +38,7 @@ namespace MarabComSal
             this.Lbl_Pleaseenter = new System.Windows.Forms.Label();
             this.Lbl_Password = new System.Windows.Forms.Label();
             this.Lbl_Username = new System.Windows.Forms.Label();
-            this.Btn_Back = new System.Windows.Forms.Button();
+            this.Linlbl_Newaccount = new System.Windows.Forms.LinkLabel();
             this.Gb_Cuslog.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,16 +61,15 @@ namespace MarabComSal
             this.Gb_Cuslog.TabStop = false;
             this.Gb_Cuslog.Text = "Customer Login Info";
             // 
-            // Linlbl_Newaccount
+            // Btn_Back
             // 
-            this.Linlbl_Newaccount.AutoSize = true;
-            this.Linlbl_Newaccount.Font = new System.Drawing.Font("Tahoma", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.Linlbl_Newaccount.Location = new System.Drawing.Point(331, 248);
-            this.Linlbl_Newaccount.Name = "Linlbl_Newaccount";
-            this.Linlbl_Newaccount.Size = new System.Drawing.Size(108, 17);
-            this.Linlbl_Newaccount.TabIndex = 7;
-            this.Linlbl_Newaccount.TabStop = true;
-            this.Linlbl_Newaccount.Text = "New Account?";
+            this.Btn_Back.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Underline);
+            this.Btn_Back.Location = new System.Drawing.Point(6, 248);
+            this.Btn_Back.Name = "Btn_Back";
+            this.Btn_Back.Size = new System.Drawing.Size(73, 23);
+            this.Btn_Back.TabIndex = 8;
+            this.Btn_Back.Text = "Back";
+            this.Btn_Back.UseVisualStyleBackColor = true;
             // 
             // lbl_status
             // 
@@ -134,15 +133,16 @@ namespace MarabComSal
             this.Lbl_Username.TabIndex = 0;
             this.Lbl_Username.Text = "Username:";
             // 
-            // Btn_Back
+            // Linlbl_Newaccount
             // 
-            this.Btn_Back.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Underline);
-            this.Btn_Back.Location = new System.Drawing.Point(6, 248);
-            this.Btn_Back.Name = "Btn_Back";
-            this.Btn_Back.Size = new System.Drawing.Size(73, 23);
-            this.Btn_Back.TabIndex = 8;
-            this.Btn_Back.Text = "Back";
-            this.Btn_Back.UseVisualStyleBackColor = true;
+            this.Linlbl_Newaccount.AutoSize = true;
+            this.Linlbl_Newaccount.Font = new System.Drawing.Font("Tahoma", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.Linlbl_Newaccount.Location = new System.Drawing.Point(331, 248);
+            this.Linlbl_Newaccount.Name = "Linlbl_Newaccount";
+            this.Linlbl_Newaccount.Size = new System.Drawing.Size(108, 17);
+            this.Linlbl_Newaccount.TabIndex = 7;
+            this.Linlbl_Newaccount.TabStop = true;
+            this.Linlbl_Newaccount.Text = "New Account?";
             // 
             // Form_CustomerLogin
             // 
@@ -152,6 +152,7 @@ namespace MarabComSal
             this.Controls.Add(this.Gb_Cuslog);
             this.Name = "Form_CustomerLogin";
             this.Text = "Form_CustomerNewAccount";
+            this.Load += new System.EventHandler(this.Form_CustomerLogin_Load);
             this.Gb_Cuslog.ResumeLayout(false);
             this.Gb_Cuslog.PerformLayout();
             this.ResumeLayout(false);
@@ -161,7 +162,6 @@ namespace MarabComSal
         #endregion
 
         private System.Windows.Forms.GroupBox Gb_Cuslog;
-        private System.Windows.Forms.LinkLabel Linlbl_Newaccount;
         private System.Windows.Forms.Label lbl_status;
         private System.Windows.Forms.Button Btn_Login;
         private System.Windows.Forms.TextBox Tb_Password;
@@ -170,5 +170,6 @@ namespace MarabComSal
         private System.Windows.Forms.Label Lbl_Password;
         private System.Windows.Forms.Label Lbl_Username;
         private System.Windows.Forms.Button Btn_Back;
+        private System.Windows.Forms.LinkLabel Linlbl_Newaccount;
     }
 }

@@ -16,5 +16,10 @@ namespace MarabComSal
         {
             InitializeComponent();
         }
+
+        private void Form_CustomerLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
