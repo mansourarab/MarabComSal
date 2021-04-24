@@ -55,7 +55,7 @@ namespace MarabComSal
             this.Gb_Updatepassword.Size = new System.Drawing.Size(382, 247);
             this.Gb_Updatepassword.TabIndex = 0;
             this.Gb_Updatepassword.TabStop = false;
-            this.Gb_Updatepassword.Text = "Update Passwrod and Email:";
+            this.Gb_Updatepassword.Text = "Update Passwrod";
             // 
             // Lbl_Oldpassword
             // 
