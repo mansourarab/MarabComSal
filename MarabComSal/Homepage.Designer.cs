@@ -1,7 +1,7 @@
 ﻿
 namespace MarabComSal
 {
-    partial class Form1
+    partial class Homepage
     {
         /// <summary>
         /// Required designer variable.
