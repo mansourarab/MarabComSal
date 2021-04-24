@@ -90,6 +90,7 @@ namespace MarabComSal
             this.btn_back.TabIndex = 18;
             this.btn_back.Text = "Back to Login";
             this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // Btn_Checkavailability
             // 
@@ -100,6 +101,7 @@ namespace MarabComSal
             this.Btn_Checkavailability.TabIndex = 17;
             this.Btn_Checkavailability.Text = "Check Availability!";
             this.Btn_Checkavailability.UseVisualStyleBackColor = true;
+            this.Btn_Checkavailability.Click += new System.EventHandler(this.Btn_Checkavailability_Click);
             // 
             // lbl_status
             // 
@@ -118,6 +120,7 @@ namespace MarabComSal
             this.Btn_Create.TabIndex = 15;
             this.Btn_Create.Text = "Create";
             this.Btn_Create.UseVisualStyleBackColor = true;
+            this.Btn_Create.Click += new System.EventHandler(this.Btn_Create_Click);
             // 
             // tb_phone
             // 
@@ -269,6 +272,7 @@ namespace MarabComSal
             this.Controls.Add(this.Gb_Createnewcustomer);
             this.Name = "Form_CustomerNewAccount";
             this.Text = "Form_CustomerNewAccount";
+            this.Load += new System.EventHandler(this.Form_CustomerNewAccount_Load);
             this.Gb_Createnewcustomer.ResumeLayout(false);
             this.Gb_Createnewcustomer.PerformLayout();
             this.ResumeLayout(false);
