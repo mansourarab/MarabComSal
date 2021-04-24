@@ -46,4 +46,5 @@ namespace MarabComSal
             channel.Close();
             return returned;
         }
+    }
 }
