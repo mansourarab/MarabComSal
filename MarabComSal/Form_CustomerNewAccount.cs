@@ -22,32 +22,27 @@ namespace MarabComSal
 
         }
 
-        int? status;
+        public static int? status;
         private void Btn_Checkavailability_Click(object sender, EventArgs e)
         {
             Class_CustomerCheckAvailability check = new Class_CustomerCheckAvailability();
-            int? checkresult = check.CheckUsernameandEmailAvalability(tb_username.Text, tb_password.Text, out int? status);
-
-            if (checkresult == 2)
+            int? checkresult = check.CheckUsernameandEmailAvalability(Tb_Username.Text, Tb_Email.Text);
+            
+            if (checkresult == 1)
             {
                 lbl_status.ForeColor = System.Drawing.Color.Red;
-                lbl_status.Text = "Username already exists, please type another one!";
+                lbl_status.Text = "Username or Email already exists, please type another one!";
 
             }
 
-            if (checkresult == 3)
-            {
-                lbl_status.ForeColor = System.Drawing.Color.Red;
-                lbl_status.Text = "Email already exists, please type another one!";
+          
 
-            }
-
-            if (checkresult == 4)
+            if (checkresult == 0)
             {
 
                 lbl_status.ForeColor = System.Drawing.Color.Green;
                 lbl_status.Text = "Account is available, go ahead and create it!";
-                status = checkresult;
+                Form_CustomerNewAccount.status = checkresult;
             }
         }
 
@@ -61,7 +56,7 @@ namespace MarabComSal
             else
             {
                 Class_CustomerNewAccount newacc = new Class_CustomerNewAccount();
-                int CustomerNewAccount = newacc.CustomerNewAccount(tb_fullname.Text, Rbtn_Male.Checked, tb_phone.Text, tb_address.Text, tb_username.Text, tb_password.Text, tb_email.Text);
+                int CustomerNewAccount = newacc.CustomerNewAccount(tb_fullname.Text, Rbtn_Male.Checked, tb_phone.Text, tb_address.Text, Tb_Username.Text, tb_password.Text, Tb_Email.Text);
 
                 if (CustomerNewAccount != 0)
                 {

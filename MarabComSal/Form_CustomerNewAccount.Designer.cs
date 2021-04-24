@@ -36,9 +36,9 @@ namespace MarabComSal
             this.Btn_Create = new System.Windows.Forms.Button();
             this.tb_phone = new System.Windows.Forms.TextBox();
             this.tb_address = new System.Windows.Forms.TextBox();
-            this.tb_email = new System.Windows.Forms.TextBox();
+            this.Tb_Email = new System.Windows.Forms.TextBox();
             this.tb_password = new System.Windows.Forms.TextBox();
-            this.tb_username = new System.Windows.Forms.TextBox();
+            this.Tb_Username = new System.Windows.Forms.TextBox();
             this.tb_fullname = new System.Windows.Forms.TextBox();
             this.Rbtn_Female = new System.Windows.Forms.RadioButton();
             this.Lbl_Gender = new System.Windows.Forms.Label();
@@ -60,9 +60,9 @@ namespace MarabComSal
             this.Gb_Createnewcustomer.Controls.Add(this.Btn_Create);
             this.Gb_Createnewcustomer.Controls.Add(this.tb_phone);
             this.Gb_Createnewcustomer.Controls.Add(this.tb_address);
-            this.Gb_Createnewcustomer.Controls.Add(this.tb_email);
+            this.Gb_Createnewcustomer.Controls.Add(this.Tb_Email);
             this.Gb_Createnewcustomer.Controls.Add(this.tb_password);
-            this.Gb_Createnewcustomer.Controls.Add(this.tb_username);
+            this.Gb_Createnewcustomer.Controls.Add(this.Tb_Username);
             this.Gb_Createnewcustomer.Controls.Add(this.tb_fullname);
             this.Gb_Createnewcustomer.Controls.Add(this.Rbtn_Female);
             this.Gb_Createnewcustomer.Controls.Add(this.Lbl_Gender);
@@ -80,7 +80,6 @@ namespace MarabComSal
             this.Gb_Createnewcustomer.TabIndex = 1;
             this.Gb_Createnewcustomer.TabStop = false;
             this.Gb_Createnewcustomer.Text = "Create New Customer Account:";
-            
             // 
             // btn_back
             // 
@@ -139,13 +138,13 @@ namespace MarabComSal
             this.tb_address.Size = new System.Drawing.Size(186, 21);
             this.tb_address.TabIndex = 13;
             // 
-            // tb_email
+            // Tb_Email
             // 
-            this.tb_email.Font = new System.Drawing.Font("Courier New", 9F);
-            this.tb_email.Location = new System.Drawing.Point(126, 166);
-            this.tb_email.Name = "tb_email";
-            this.tb_email.Size = new System.Drawing.Size(186, 21);
-            this.tb_email.TabIndex = 12;
+            this.Tb_Email.Font = new System.Drawing.Font("Courier New", 9F);
+            this.Tb_Email.Location = new System.Drawing.Point(126, 166);
+            this.Tb_Email.Name = "Tb_Email";
+            this.Tb_Email.Size = new System.Drawing.Size(186, 21);
+            this.Tb_Email.TabIndex = 12;
             // 
             // tb_password
             // 
@@ -155,13 +154,13 @@ namespace MarabComSal
             this.tb_password.Size = new System.Drawing.Size(186, 21);
             this.tb_password.TabIndex = 11;
             // 
-            // tb_username
+            // Tb_Username
             // 
-            this.tb_username.Font = new System.Drawing.Font("Courier New", 9F);
-            this.tb_username.Location = new System.Drawing.Point(126, 85);
-            this.tb_username.Name = "tb_username";
-            this.tb_username.Size = new System.Drawing.Size(186, 21);
-            this.tb_username.TabIndex = 10;
+            this.Tb_Username.Font = new System.Drawing.Font("Courier New", 9F);
+            this.Tb_Username.Location = new System.Drawing.Point(126, 85);
+            this.Tb_Username.Name = "Tb_Username";
+            this.Tb_Username.Size = new System.Drawing.Size(186, 21);
+            this.Tb_Username.TabIndex = 10;
             // 
             // tb_fullname
             // 
@@ -289,9 +288,9 @@ namespace MarabComSal
         private System.Windows.Forms.Button Btn_Create;
         private System.Windows.Forms.TextBox tb_phone;
         private System.Windows.Forms.TextBox tb_address;
-        private System.Windows.Forms.TextBox tb_email;
+        private System.Windows.Forms.TextBox Tb_Email;
         private System.Windows.Forms.TextBox tb_password;
-        private System.Windows.Forms.TextBox tb_username;
+        private System.Windows.Forms.TextBox Tb_Username;
         private System.Windows.Forms.TextBox tb_fullname;
         private System.Windows.Forms.RadioButton Rbtn_Female;
         private System.Windows.Forms.Label Lbl_Gender;

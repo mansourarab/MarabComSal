@@ -31,7 +31,7 @@ namespace MarabComSal
             que.Parameters.Clear();
             que.Parameters.AddWithValue("@customername", customername);
             que.Parameters.AddWithValue("@address", address);
-            que.Parameters.AddWithValue("@gender", gender);
+            que.Parameters.AddWithValue("@gender_bool", gender);
             que.Parameters.AddWithValue("@username", username);
             que.Parameters.AddWithValue("@password", password);
             que.Parameters.AddWithValue("@phone", phone);

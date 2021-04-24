@@ -21,7 +21,7 @@ namespace MarabComSal
         }
 
 
-        public int? CheckUsernameandEmailAvalability(string username, string email, out int? status)
+        public int? CheckUsernameandEmailAvalability(string username, string email)
         {
             
             channel.Open();
@@ -31,13 +31,14 @@ namespace MarabComSal
             que.Connection = channel;
             que.Parameters.Clear();
             que.Parameters.AddWithValue("@username", username);
-            que.Parameters.AddWithValue("@email", username);
-            que.Parameters.Add("@result", SqlDbType.Int).Direction = ParameterDirection.Output;
-            status = Convert.ToInt32(que.Parameters["@result"].Value);
-
+            que.Parameters.AddWithValue("@email", email);
+            que.Parameters.Add("@returned", SqlDbType.Int).Direction = ParameterDirection.ReturnValue;
+            que.ExecuteNonQuery();//
+            int returned = (int)que.Parameters["@returned"].Value;//1 or 0
+            
 
             channel.Close();
-            return status;
+            return returned;
         }
     }
 }
