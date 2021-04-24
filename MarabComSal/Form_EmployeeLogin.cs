@@ -24,15 +24,15 @@ namespace MarabComSal
 
         private void Btn_Login_Click(object sender, EventArgs e)
         {
-            EmployeeLoginClass elogin = new EmployeeLoginClass();
+            Class_EmployeeLogin newlogin = new Class_EmployeeLogin();
             int? AccountId;
-            int result = elogin.CheckUser(Tb_Username.Text, Tb_Password.Text, out AccountId);
+            int result = newlogin.CheckUser(Tb_Username.Text, Tb_Password.Text, out AccountId);
             if (result == 1)
             {
                 Lbl_Status.ForeColor = System.Drawing.Color.Green;
                 Lbl_Status.Text = "Loggied in Successfully!";
 
-                EmployeeLoginClass.AccountId = AccountId;
+                Class_EmployeeLogin.AccountId = AccountId;
 
                 Homepage Hform = new Homepage();
                 Hform.Show();
