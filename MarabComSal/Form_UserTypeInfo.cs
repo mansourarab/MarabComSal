@@ -16,5 +16,28 @@ namespace MarabComSal
         {
             InitializeComponent();
         }
+
+        private void Form_UserTypeInfo_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Employee_Click(object sender, EventArgs e)
+        {
+            Form_EmployeeLogin newlogin = new Form_EmployeeLogin();
+            newlogin.Show();
+        }
+
+        private void Btn_Customer_Click(object sender, EventArgs e)
+        {
+            Form_CustomerLogin newlogin = new Form_CustomerLogin();
+            newlogin.Show();
+
+        }
+
+        private void Btn_Out_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
