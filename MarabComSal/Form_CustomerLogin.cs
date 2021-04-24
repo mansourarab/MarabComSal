@@ -48,9 +48,9 @@ namespace MarabComSal
 
         private void Btn_Back_Click(object sender, EventArgs e)
         {
-            Form_UserTypeInfo getback = new Form_UserTypeInfo();
+            
             this.Close();
-            getback.Show();
+            
             
         }
 

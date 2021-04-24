@@ -25,14 +25,13 @@ namespace MarabComSal
         private void Btn_Employee_Click(object sender, EventArgs e)
         {
             Form_EmployeeLogin newlogin = new Form_EmployeeLogin();
-            this.Close();
             newlogin.Show();
+            
         }
 
         private void Btn_Customer_Click(object sender, EventArgs e)
         {
             Form_CustomerLogin newlogin = new Form_CustomerLogin();
-            this.Close();
             newlogin.Show();
 
         }
