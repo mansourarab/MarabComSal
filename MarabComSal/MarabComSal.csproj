@@ -52,6 +52,25 @@
     <Compile Include="Class_EmployeeCheckAvailability.cs" />
     <Compile Include="Class_EmployeeLogin.cs" />
     <Compile Include="Class_EmployeeNewAccount.cs" />
+    <Compile Include="Class_Info.cs" />
+    <Compile Include="Form_ContactInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ContactInfo.Designer.cs">
+      <DependentUpon>Form_ContactInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_UpdatePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_UpdatePassword.Designer.cs">
+      <DependentUpon>Form_UpdatePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ViewInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ViewInfo.Designer.cs">
+      <DependentUpon>Form_ViewInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Homepage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +109,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_ContactInfo.resx">
+      <DependentUpon>Form_ContactInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_CustomerLogin.resx">
       <DependentUpon>Form_CustomerLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,8 +124,14 @@
     <EmbeddedResource Include="Form_EmployeeNewAccount.resx">
       <DependentUpon>Form_EmployeeNewAccount.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_UpdatePassword.resx">
+      <DependentUpon>Form_UpdatePassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_UserTypeInfo.resx">
       <DependentUpon>Form_UserTypeInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ViewInfo.resx">
+      <DependentUpon>Form_ViewInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Homepage.resx">
       <DependentUpon>Homepage.cs</DependentUpon>

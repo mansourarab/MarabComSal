@@ -30,23 +30,23 @@ namespace MarabComSal
         private void InitializeComponent()
         {
             this.Gb_Userinfo = new System.Windows.Forms.GroupBox();
-            this.Lbl_Fullname = new System.Windows.Forms.Label();
-            this.Lbl_Email = new System.Windows.Forms.Label();
-            this.Lbl_gender = new System.Windows.Forms.Label();
-            this.Lbl_Phone = new System.Windows.Forms.Label();
-            this.Lbl_Usertype = new System.Windows.Forms.Label();
-            this.Lbl_Address = new System.Windows.Forms.Label();
-            this.Lbl_Department = new System.Windows.Forms.Label();
-            this.Lbl_Companyemail = new System.Windows.Forms.Label();
-            this.Btn_Back = new System.Windows.Forms.Button();
-            this.Lbl_FullnameData = new System.Windows.Forms.Label();
-            this.Lbl_EmailData = new System.Windows.Forms.Label();
-            this.Lbl_GenderData = new System.Windows.Forms.Label();
-            this.Lbl_PhoneData = new System.Windows.Forms.Label();
-            this.Lbl_usertypeData = new System.Windows.Forms.Label();
-            this.Lbl_AddressData = new System.Windows.Forms.Label();
-            this.Lbl_DepartmentData = new System.Windows.Forms.Label();
             this.Lbl_CompanyemailData = new System.Windows.Forms.Label();
+            this.Lbl_DepartmentData = new System.Windows.Forms.Label();
+            this.Lbl_AddressData = new System.Windows.Forms.Label();
+            this.Lbl_usertypeData = new System.Windows.Forms.Label();
+            this.Lbl_PhoneData = new System.Windows.Forms.Label();
+            this.Lbl_GenderData = new System.Windows.Forms.Label();
+            this.Lbl_EmailData = new System.Windows.Forms.Label();
+            this.Lbl_FullnameData = new System.Windows.Forms.Label();
+            this.Btn_Back = new System.Windows.Forms.Button();
+            this.Lbl_Companyemail = new System.Windows.Forms.Label();
+            this.Lbl_Department = new System.Windows.Forms.Label();
+            this.Lbl_Address = new System.Windows.Forms.Label();
+            this.Lbl_Usertype = new System.Windows.Forms.Label();
+            this.Lbl_Phone = new System.Windows.Forms.Label();
+            this.Lbl_gender = new System.Windows.Forms.Label();
+            this.Lbl_Email = new System.Windows.Forms.Label();
+            this.Lbl_Fullname = new System.Windows.Forms.Label();
             this.Gb_Userinfo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,85 +78,77 @@ namespace MarabComSal
             this.Gb_Userinfo.TabStop = false;
             this.Gb_Userinfo.Text = "User Info";
             // 
-            // Lbl_Fullname
+            // Lbl_CompanyemailData
             // 
-            this.Lbl_Fullname.AutoSize = true;
-            this.Lbl_Fullname.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Underline);
-            this.Lbl_Fullname.Location = new System.Drawing.Point(21, 60);
-            this.Lbl_Fullname.Name = "Lbl_Fullname";
-            this.Lbl_Fullname.Size = new System.Drawing.Size(86, 19);
-            this.Lbl_Fullname.TabIndex = 0;
-            this.Lbl_Fullname.Text = "Full Name:";
+            this.Lbl_CompanyemailData.AutoSize = true;
+            this.Lbl_CompanyemailData.Font = new System.Drawing.Font("Courier New", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_CompanyemailData.Location = new System.Drawing.Point(171, 403);
+            this.Lbl_CompanyemailData.Name = "Lbl_CompanyemailData";
+            this.Lbl_CompanyemailData.Size = new System.Drawing.Size(0, 17);
+            this.Lbl_CompanyemailData.TabIndex = 16;
             // 
-            // Lbl_Email
+            // Lbl_DepartmentData
             // 
-            this.Lbl_Email.AutoSize = true;
-            this.Lbl_Email.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Underline);
-            this.Lbl_Email.Location = new System.Drawing.Point(21, 108);
-            this.Lbl_Email.Name = "Lbl_Email";
-            this.Lbl_Email.Size = new System.Drawing.Size(54, 19);
-            this.Lbl_Email.TabIndex = 1;
-            this.Lbl_Email.Text = "Email:";
+            this.Lbl_DepartmentData.AutoSize = true;
+            this.Lbl_DepartmentData.Font = new System.Drawing.Font("Courier New", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_DepartmentData.Location = new System.Drawing.Point(144, 354);
+            this.Lbl_DepartmentData.Name = "Lbl_DepartmentData";
+            this.Lbl_DepartmentData.Size = new System.Drawing.Size(0, 17);
+            this.Lbl_DepartmentData.TabIndex = 15;
             // 
-            // Lbl_gender
+            // Lbl_AddressData
             // 
-            this.Lbl_gender.AutoSize = true;
-            this.Lbl_gender.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Underline);
-            this.Lbl_gender.Location = new System.Drawing.Point(21, 156);
-            this.Lbl_gender.Name = "Lbl_gender";
-            this.Lbl_gender.Size = new System.Drawing.Size(66, 19);
-            this.Lbl_gender.TabIndex = 2;
-            this.Lbl_gender.Text = "Gender:";
+            this.Lbl_AddressData.AutoSize = true;
+            this.Lbl_AddressData.Font = new System.Drawing.Font("Courier New", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_AddressData.Location = new System.Drawing.Point(144, 307);
+            this.Lbl_AddressData.Name = "Lbl_AddressData";
+            this.Lbl_AddressData.Size = new System.Drawing.Size(0, 17);
+            this.Lbl_AddressData.TabIndex = 14;
             // 
-            // Lbl_Phone
+            // Lbl_usertypeData
             // 
-            this.Lbl_Phone.AutoSize = true;
-            this.Lbl_Phone.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Underline);
-            this.Lbl_Phone.Location = new System.Drawing.Point(21, 204);
-            this.Lbl_Phone.Name = "Lbl_Phone";
-            this.Lbl_Phone.Size = new System.Drawing.Size(59, 19);
-            this.Lbl_Phone.TabIndex = 3;
-            this.Lbl_Phone.Text = "Phone:";
+            this.Lbl_usertypeData.AutoSize = true;
+            this.Lbl_usertypeData.Font = new System.Drawing.Font("Courier New", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_usertypeData.Location = new System.Drawing.Point(147, 254);
+            this.Lbl_usertypeData.Name = "Lbl_usertypeData";
+            this.Lbl_usertypeData.Size = new System.Drawing.Size(0, 17);
+            this.Lbl_usertypeData.TabIndex = 13;
             // 
-            // Lbl_Usertype
+            // Lbl_PhoneData
             // 
-            this.Lbl_Usertype.AutoSize = true;
-            this.Lbl_Usertype.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Underline);
-            this.Lbl_Usertype.Location = new System.Drawing.Point(20, 254);
-            this.Lbl_Usertype.Name = "Lbl_Usertype";
-            this.Lbl_Usertype.Size = new System.Drawing.Size(87, 19);
-            this.Lbl_Usertype.TabIndex = 4;
-            this.Lbl_Usertype.Text = "User Type:";
+            this.Lbl_PhoneData.AutoSize = true;
+            this.Lbl_PhoneData.Font = new System.Drawing.Font("Courier New", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_PhoneData.Location = new System.Drawing.Point(144, 204);
+            this.Lbl_PhoneData.Name = "Lbl_PhoneData";
+            this.Lbl_PhoneData.Size = new System.Drawing.Size(0, 17);
+            this.Lbl_PhoneData.TabIndex = 12;
             // 
-            // Lbl_Address
+            // Lbl_GenderData
             // 
-            this.Lbl_Address.AutoSize = true;
-            this.Lbl_Address.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Underline);
-            this.Lbl_Address.Location = new System.Drawing.Point(21, 307);
-            this.Lbl_Address.Name = "Lbl_Address";
-            this.Lbl_Address.Size = new System.Drawing.Size(72, 19);
-            this.Lbl_Address.TabIndex = 5;
-            this.Lbl_Address.Text = "Address:";
+            this.Lbl_GenderData.AutoSize = true;
+            this.Lbl_GenderData.Font = new System.Drawing.Font("Courier New", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_GenderData.Location = new System.Drawing.Point(144, 156);
+            this.Lbl_GenderData.Name = "Lbl_GenderData";
+            this.Lbl_GenderData.Size = new System.Drawing.Size(0, 17);
+            this.Lbl_GenderData.TabIndex = 11;
             // 
-            // Lbl_Department
+            // Lbl_EmailData
             // 
-            this.Lbl_Department.AutoSize = true;
-            this.Lbl_Department.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Underline);
-            this.Lbl_Department.Location = new System.Drawing.Point(21, 354);
-            this.Lbl_Department.Name = "Lbl_Department";
-            this.Lbl_Department.Size = new System.Drawing.Size(98, 19);
-            this.Lbl_Department.TabIndex = 6;
-            this.Lbl_Department.Text = "Department:";
+            this.Lbl_EmailData.AutoSize = true;
+            this.Lbl_EmailData.Font = new System.Drawing.Font("Courier New", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_EmailData.Location = new System.Drawing.Point(144, 113);
+            this.Lbl_EmailData.Name = "Lbl_EmailData";
+            this.Lbl_EmailData.Size = new System.Drawing.Size(0, 17);
+            this.Lbl_EmailData.TabIndex = 10;
             // 
-            // Lbl_Companyemail
+            // Lbl_FullnameData
             // 
-            this.Lbl_Companyemail.AutoSize = true;
-            this.Lbl_Companyemail.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Underline);
-            this.Lbl_Companyemail.Location = new System.Drawing.Point(21, 403);
-            this.Lbl_Companyemail.Name = "Lbl_Companyemail";
-            this.Lbl_Companyemail.Size = new System.Drawing.Size(126, 19);
-            this.Lbl_Companyemail.TabIndex = 7;
-            this.Lbl_Companyemail.Text = "Company Email:";
+            this.Lbl_FullnameData.AutoSize = true;
+            this.Lbl_FullnameData.Font = new System.Drawing.Font("Courier New", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_FullnameData.Location = new System.Drawing.Point(147, 60);
+            this.Lbl_FullnameData.Name = "Lbl_FullnameData";
+            this.Lbl_FullnameData.Size = new System.Drawing.Size(0, 17);
+            this.Lbl_FullnameData.TabIndex = 9;
             // 
             // Btn_Back
             // 
@@ -168,77 +160,85 @@ namespace MarabComSal
             this.Btn_Back.Text = "Back";
             this.Btn_Back.UseVisualStyleBackColor = true;
             // 
-            // Lbl_FullnameData
+            // Lbl_Companyemail
             // 
-            this.Lbl_FullnameData.AutoSize = true;
-            this.Lbl_FullnameData.Font = new System.Drawing.Font("Courier New", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_FullnameData.Location = new System.Drawing.Point(147, 60);
-            this.Lbl_FullnameData.Name = "Lbl_FullnameData";
-            this.Lbl_FullnameData.Size = new System.Drawing.Size(0, 17);
-            this.Lbl_FullnameData.TabIndex = 9;
+            this.Lbl_Companyemail.AutoSize = true;
+            this.Lbl_Companyemail.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Underline);
+            this.Lbl_Companyemail.Location = new System.Drawing.Point(21, 403);
+            this.Lbl_Companyemail.Name = "Lbl_Companyemail";
+            this.Lbl_Companyemail.Size = new System.Drawing.Size(126, 19);
+            this.Lbl_Companyemail.TabIndex = 7;
+            this.Lbl_Companyemail.Text = "Company Email:";
             // 
-            // Lbl_EmailData
+            // Lbl_Department
             // 
-            this.Lbl_EmailData.AutoSize = true;
-            this.Lbl_EmailData.Font = new System.Drawing.Font("Courier New", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_EmailData.Location = new System.Drawing.Point(144, 113);
-            this.Lbl_EmailData.Name = "Lbl_EmailData";
-            this.Lbl_EmailData.Size = new System.Drawing.Size(0, 17);
-            this.Lbl_EmailData.TabIndex = 10;
+            this.Lbl_Department.AutoSize = true;
+            this.Lbl_Department.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Underline);
+            this.Lbl_Department.Location = new System.Drawing.Point(21, 354);
+            this.Lbl_Department.Name = "Lbl_Department";
+            this.Lbl_Department.Size = new System.Drawing.Size(98, 19);
+            this.Lbl_Department.TabIndex = 6;
+            this.Lbl_Department.Text = "Department:";
             // 
-            // Lbl_GenderData
+            // Lbl_Address
             // 
-            this.Lbl_GenderData.AutoSize = true;
-            this.Lbl_GenderData.Font = new System.Drawing.Font("Courier New", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_GenderData.Location = new System.Drawing.Point(144, 156);
-            this.Lbl_GenderData.Name = "Lbl_GenderData";
-            this.Lbl_GenderData.Size = new System.Drawing.Size(0, 17);
-            this.Lbl_GenderData.TabIndex = 11;
+            this.Lbl_Address.AutoSize = true;
+            this.Lbl_Address.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Underline);
+            this.Lbl_Address.Location = new System.Drawing.Point(21, 307);
+            this.Lbl_Address.Name = "Lbl_Address";
+            this.Lbl_Address.Size = new System.Drawing.Size(72, 19);
+            this.Lbl_Address.TabIndex = 5;
+            this.Lbl_Address.Text = "Address:";
             // 
-            // Lbl_PhoneData
+            // Lbl_Usertype
             // 
-            this.Lbl_PhoneData.AutoSize = true;
-            this.Lbl_PhoneData.Font = new System.Drawing.Font("Courier New", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_PhoneData.Location = new System.Drawing.Point(144, 204);
-            this.Lbl_PhoneData.Name = "Lbl_PhoneData";
-            this.Lbl_PhoneData.Size = new System.Drawing.Size(0, 17);
-            this.Lbl_PhoneData.TabIndex = 12;
+            this.Lbl_Usertype.AutoSize = true;
+            this.Lbl_Usertype.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Underline);
+            this.Lbl_Usertype.Location = new System.Drawing.Point(20, 254);
+            this.Lbl_Usertype.Name = "Lbl_Usertype";
+            this.Lbl_Usertype.Size = new System.Drawing.Size(87, 19);
+            this.Lbl_Usertype.TabIndex = 4;
+            this.Lbl_Usertype.Text = "User Type:";
             // 
-            // Lbl_usertypeData
+            // Lbl_Phone
             // 
-            this.Lbl_usertypeData.AutoSize = true;
-            this.Lbl_usertypeData.Font = new System.Drawing.Font("Courier New", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_usertypeData.Location = new System.Drawing.Point(147, 254);
-            this.Lbl_usertypeData.Name = "Lbl_usertypeData";
-            this.Lbl_usertypeData.Size = new System.Drawing.Size(0, 17);
-            this.Lbl_usertypeData.TabIndex = 13;
+            this.Lbl_Phone.AutoSize = true;
+            this.Lbl_Phone.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Underline);
+            this.Lbl_Phone.Location = new System.Drawing.Point(21, 204);
+            this.Lbl_Phone.Name = "Lbl_Phone";
+            this.Lbl_Phone.Size = new System.Drawing.Size(59, 19);
+            this.Lbl_Phone.TabIndex = 3;
+            this.Lbl_Phone.Text = "Phone:";
             // 
-            // Lbl_AddressData
+            // Lbl_gender
             // 
-            this.Lbl_AddressData.AutoSize = true;
-            this.Lbl_AddressData.Font = new System.Drawing.Font("Courier New", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_AddressData.Location = new System.Drawing.Point(144, 307);
-            this.Lbl_AddressData.Name = "Lbl_AddressData";
-            this.Lbl_AddressData.Size = new System.Drawing.Size(0, 17);
-            this.Lbl_AddressData.TabIndex = 14;
+            this.Lbl_gender.AutoSize = true;
+            this.Lbl_gender.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Underline);
+            this.Lbl_gender.Location = new System.Drawing.Point(21, 156);
+            this.Lbl_gender.Name = "Lbl_gender";
+            this.Lbl_gender.Size = new System.Drawing.Size(66, 19);
+            this.Lbl_gender.TabIndex = 2;
+            this.Lbl_gender.Text = "Gender:";
             // 
-            // Lbl_DepartmentData
+            // Lbl_Email
             // 
-            this.Lbl_DepartmentData.AutoSize = true;
-            this.Lbl_DepartmentData.Font = new System.Drawing.Font("Courier New", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_DepartmentData.Location = new System.Drawing.Point(144, 354);
-            this.Lbl_DepartmentData.Name = "Lbl_DepartmentData";
-            this.Lbl_DepartmentData.Size = new System.Drawing.Size(0, 17);
-            this.Lbl_DepartmentData.TabIndex = 15;
+            this.Lbl_Email.AutoSize = true;
+            this.Lbl_Email.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Underline);
+            this.Lbl_Email.Location = new System.Drawing.Point(21, 108);
+            this.Lbl_Email.Name = "Lbl_Email";
+            this.Lbl_Email.Size = new System.Drawing.Size(54, 19);
+            this.Lbl_Email.TabIndex = 1;
+            this.Lbl_Email.Text = "Email:";
             // 
-            // Lbl_CompanyemailData
+            // Lbl_Fullname
             // 
-            this.Lbl_CompanyemailData.AutoSize = true;
-            this.Lbl_CompanyemailData.Font = new System.Drawing.Font("Courier New", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_CompanyemailData.Location = new System.Drawing.Point(171, 403);
-            this.Lbl_CompanyemailData.Name = "Lbl_CompanyemailData";
-            this.Lbl_CompanyemailData.Size = new System.Drawing.Size(0, 17);
-            this.Lbl_CompanyemailData.TabIndex = 16;
+            this.Lbl_Fullname.AutoSize = true;
+            this.Lbl_Fullname.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Underline);
+            this.Lbl_Fullname.Location = new System.Drawing.Point(21, 60);
+            this.Lbl_Fullname.Name = "Lbl_Fullname";
+            this.Lbl_Fullname.Size = new System.Drawing.Size(86, 19);
+            this.Lbl_Fullname.TabIndex = 0;
+            this.Lbl_Fullname.Text = "Full Name:";
             // 
             // Form_ViewInfo
             // 
@@ -248,6 +248,7 @@ namespace MarabComSal
             this.Controls.Add(this.Gb_Userinfo);
             this.Name = "Form_ViewInfo";
             this.Text = "Form_ViewInfo";
+            this.Load += new System.EventHandler(this.Form_ViewInfo_Load);
             this.Gb_Userinfo.ResumeLayout(false);
             this.Gb_Userinfo.PerformLayout();
             this.ResumeLayout(false);

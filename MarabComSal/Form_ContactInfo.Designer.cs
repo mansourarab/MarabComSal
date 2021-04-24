@@ -30,13 +30,13 @@ namespace MarabComSal
         private void InitializeComponent()
         {
             this.Gb_Contactinfo = new System.Windows.Forms.GroupBox();
-            this.Lbl_Phone = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.Tb_PhoneData = new System.Windows.Forms.TextBox();
-            this.Tb_AddressData = new System.Windows.Forms.TextBox();
-            this.Btn_Savechanges = new System.Windows.Forms.Button();
-            this.Btn_Back = new System.Windows.Forms.Button();
             this.Lbl_Status = new System.Windows.Forms.Label();
+            this.Btn_Back = new System.Windows.Forms.Button();
+            this.Btn_Savechanges = new System.Windows.Forms.Button();
+            this.Tb_AddressData = new System.Windows.Forms.TextBox();
+            this.Tb_PhoneData = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Lbl_Phone = new System.Windows.Forms.Label();
             this.Gb_Contactinfo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,49 +57,14 @@ namespace MarabComSal
             this.Gb_Contactinfo.TabStop = false;
             this.Gb_Contactinfo.Text = "Update Contact Info";
             // 
-            // Lbl_Phone
+            // Lbl_Status
             // 
-            this.Lbl_Phone.AutoSize = true;
-            this.Lbl_Phone.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.Lbl_Phone.Location = new System.Drawing.Point(30, 43);
-            this.Lbl_Phone.Name = "Lbl_Phone";
-            this.Lbl_Phone.Size = new System.Drawing.Size(57, 17);
-            this.Lbl_Phone.TabIndex = 0;
-            this.Lbl_Phone.Text = "Phone:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(30, 87);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Address:";
-            // 
-            // Tb_PhoneData
-            // 
-            this.Tb_PhoneData.Location = new System.Drawing.Point(111, 43);
-            this.Tb_PhoneData.Name = "Tb_PhoneData";
-            this.Tb_PhoneData.Size = new System.Drawing.Size(100, 27);
-            this.Tb_PhoneData.TabIndex = 2;
-            // 
-            // Tb_AddressData
-            // 
-            this.Tb_AddressData.Location = new System.Drawing.Point(111, 87);
-            this.Tb_AddressData.Name = "Tb_AddressData";
-            this.Tb_AddressData.Size = new System.Drawing.Size(100, 27);
-            this.Tb_AddressData.TabIndex = 3;
-            // 
-            // Btn_Savechanges
-            // 
-            this.Btn_Savechanges.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
-            this.Btn_Savechanges.Location = new System.Drawing.Point(211, 151);
-            this.Btn_Savechanges.Name = "Btn_Savechanges";
-            this.Btn_Savechanges.Size = new System.Drawing.Size(97, 23);
-            this.Btn_Savechanges.TabIndex = 4;
-            this.Btn_Savechanges.Text = "Save Changes";
-            this.Btn_Savechanges.UseVisualStyleBackColor = true;
+            this.Lbl_Status.AutoSize = true;
+            this.Lbl_Status.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.Lbl_Status.Location = new System.Drawing.Point(150, 121);
+            this.Lbl_Status.Name = "Lbl_Status";
+            this.Lbl_Status.Size = new System.Drawing.Size(0, 17);
+            this.Lbl_Status.TabIndex = 6;
             // 
             // Btn_Back
             // 
@@ -111,14 +76,49 @@ namespace MarabComSal
             this.Btn_Back.Text = "Back";
             this.Btn_Back.UseVisualStyleBackColor = true;
             // 
-            // Lbl_Status
+            // Btn_Savechanges
             // 
-            this.Lbl_Status.AutoSize = true;
-            this.Lbl_Status.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.Lbl_Status.Location = new System.Drawing.Point(150, 121);
-            this.Lbl_Status.Name = "Lbl_Status";
-            this.Lbl_Status.Size = new System.Drawing.Size(0, 17);
-            this.Lbl_Status.TabIndex = 6;
+            this.Btn_Savechanges.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.Btn_Savechanges.Location = new System.Drawing.Point(211, 151);
+            this.Btn_Savechanges.Name = "Btn_Savechanges";
+            this.Btn_Savechanges.Size = new System.Drawing.Size(97, 23);
+            this.Btn_Savechanges.TabIndex = 4;
+            this.Btn_Savechanges.Text = "Save Changes";
+            this.Btn_Savechanges.UseVisualStyleBackColor = true;
+            // 
+            // Tb_AddressData
+            // 
+            this.Tb_AddressData.Location = new System.Drawing.Point(111, 87);
+            this.Tb_AddressData.Name = "Tb_AddressData";
+            this.Tb_AddressData.Size = new System.Drawing.Size(100, 27);
+            this.Tb_AddressData.TabIndex = 3;
+            // 
+            // Tb_PhoneData
+            // 
+            this.Tb_PhoneData.Location = new System.Drawing.Point(111, 43);
+            this.Tb_PhoneData.Name = "Tb_PhoneData";
+            this.Tb_PhoneData.Size = new System.Drawing.Size(100, 27);
+            this.Tb_PhoneData.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(30, 87);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(69, 17);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Address:";
+            // 
+            // Lbl_Phone
+            // 
+            this.Lbl_Phone.AutoSize = true;
+            this.Lbl_Phone.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.Lbl_Phone.Location = new System.Drawing.Point(30, 43);
+            this.Lbl_Phone.Name = "Lbl_Phone";
+            this.Lbl_Phone.Size = new System.Drawing.Size(57, 17);
+            this.Lbl_Phone.TabIndex = 0;
+            this.Lbl_Phone.Text = "Phone:";
             // 
             // Form_ContactInfo
             // 
@@ -128,6 +128,7 @@ namespace MarabComSal
             this.Controls.Add(this.Gb_Contactinfo);
             this.Name = "Form_ContactInfo";
             this.Text = "Form_ContactInfo";
+            this.Load += new System.EventHandler(this.Form_ContactInfo_Load);
             this.Gb_Contactinfo.ResumeLayout(false);
             this.Gb_Contactinfo.PerformLayout();
             this.ResumeLayout(false);
