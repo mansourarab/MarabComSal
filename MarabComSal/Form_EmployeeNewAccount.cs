@@ -17,38 +17,33 @@ namespace MarabComSal
             InitializeComponent();
         }
 
-        int? status;
+        public static int? status;
         private void Btn_Checkavailability_Click(object sender, EventArgs e)
         {
-            Class_EmployeeCheckAvailability check = new Class_EmployeeCheckAvailability();
-            int? checkresult = check.CheckUsernameandEmailAvalability(Tb_Username.Text, Tb_Password.Text, out int? status);
+            Class_CheckAvailability check = new Class_CheckAvailability();
+            int? checkresult = check.CheckUsernameandEmailAvalability(Tb_Username.Text, Tb_Password.Text);
 
-            if (checkresult == 2)
+            if (checkresult == 1)
             {
                 lbl_status.ForeColor = System.Drawing.Color.Red;
-                lbl_status.Text = "Username already exists, please type another one!";
+                lbl_status.Text = "Username or Email already exists, please type another one!";
 
             }
 
-            if (checkresult == 3)
-            {
-                lbl_status.ForeColor = System.Drawing.Color.Red;
-                lbl_status.Text = "Email already exists, please type another one!";
 
-            }
 
-            if (checkresult == 4)
+            if (checkresult == 0)
             {
 
                 lbl_status.ForeColor = System.Drawing.Color.Green;
                 lbl_status.Text = "Account is available, go ahead and create it!";
-                status = checkresult;
+                Form_EmployeeNewAccount.status = checkresult;
             }
         }
 
         private void Btn_Create_Click(object sender, EventArgs e)
         {
-            if (status is null || status == 2 || status == 3)
+            if (status is null)
             {
                 MessageBox.Show("Please check availability...");
             }

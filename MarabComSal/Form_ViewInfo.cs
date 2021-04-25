@@ -21,26 +21,16 @@ namespace MarabComSal
         private void Form_ViewInfo_Load(object sender, EventArgs e)
         {
 
-            if (Class_Login.AccountId != null)
-            {
                 Class_Info view = new Class_Info();
                 DataTable data = view.ViewInfo(Class_Login.AccountId);
                 if (data.Rows.Count != 0)
                 {
                     dataGridView1.DataSource = data;
+                
                 }
-            }
 
 
-            if (Class_EmployeeLogin.AccountId != null)
-            {
-                Class_Info view = new Class_Info();
-                DataTable data = view.ViewInfo(Class_EmployeeLogin.AccountId);
-                if (data.Rows.Count != 0)
-                {
-                    dataGridView1.DataSource = data;
-                }
-            }
+            
         }
 
         private void Btn_Back_Click(object sender, EventArgs e)

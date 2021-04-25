@@ -32,9 +32,9 @@ namespace MarabComSal
             que.Parameters.AddWithValue("@accountid", accountid);
             que.Parameters.Add("@returned", SqlDbType.Int).Direction = ParameterDirection.ReturnValue;
             int returned = (int)que.Parameters["@returned"].Value;
-            return returned;
 
             channel.Close();
+            return returned;
 
         }
     }

@@ -8,13 +8,13 @@ using System.Data.SqlClient;
 
 namespace MarabComSal
 {
-    class Class_CustomerCheckAvailability
+    class Class_CheckAvailability
     {
         SqlConnection channel;
         SqlCommand que;
 
 
-        public Class_CustomerCheckAvailability()
+        public Class_CheckAvailability()
         {
             channel = new SqlConnection(@"data source=COMMANDERMN9\SQLEXPRESS;initial catalog=Marab Company;integrated security=true;");
             que = new SqlCommand();

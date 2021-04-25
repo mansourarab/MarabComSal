@@ -25,7 +25,7 @@ namespace MarabComSal
         public static int? status;
         private void Btn_Checkavailability_Click(object sender, EventArgs e)
         {
-            Class_CustomerCheckAvailability check = new Class_CustomerCheckAvailability();
+            Class_CheckAvailability check = new Class_CheckAvailability();
             int? checkresult = check.CheckUsernameandEmailAvalability(Tb_Username.Text, Tb_Email.Text);
             
             if (checkresult == 1)
@@ -48,8 +48,9 @@ namespace MarabComSal
 
         private void Btn_Create_Click(object sender, EventArgs e)
         {
-            if (status is null || status == 2 || status == 3)
+            if (status is null)
             {
+                
                 MessageBox.Show("Please check availability...");
             }
 

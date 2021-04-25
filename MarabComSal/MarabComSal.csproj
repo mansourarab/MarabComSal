@@ -46,10 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class_CustomerCheckAvailability.cs" />
+    <Compile Include="Class_CheckAvailability.cs" />
     <Compile Include="Class_Login.cs" />
     <Compile Include="Class_CustomerNewAccount.cs" />
-    <Compile Include="Class_EmployeeCheckAvailability.cs" />
     <Compile Include="Class_EmployeeNewAccount.cs" />
     <Compile Include="Class_Info.cs" />
     <Compile Include="Class_UpdatePassword.cs" />
