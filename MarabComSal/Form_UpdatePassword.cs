@@ -47,7 +47,7 @@ namespace MarabComSal
 
         private void Btn_Back_Click(object sender, EventArgs e)
         {
-            Homepage backto = new Homepage();
+            EmployeeHomepage backto = new EmployeeHomepage();
             backto.Show();
             this.Close();
         }

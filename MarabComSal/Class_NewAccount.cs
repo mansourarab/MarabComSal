@@ -56,7 +56,7 @@ namespace MarabComSal
             que.Parameters.Clear();
             que.Parameters.AddWithValue("@empname", employeename);
             que.Parameters.AddWithValue("@addr", address);
-            que.Parameters.AddWithValue("@gender", gender);
+            que.Parameters.AddWithValue("@gender_bool", gender);
             que.Parameters.AddWithValue("@username", username);
             que.Parameters.AddWithValue("@password", password);
             que.Parameters.AddWithValue("@phone", phone);

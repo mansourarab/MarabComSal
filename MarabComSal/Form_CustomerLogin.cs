@@ -34,7 +34,7 @@ namespace MarabComSal
 
                 Class_Login.AccountId = AccountId;
 
-                Homepage Hform = new Homepage();
+                EmployeeHomepage Hform = new EmployeeHomepage();
                 this.Close();
                 Hform.Show();
 

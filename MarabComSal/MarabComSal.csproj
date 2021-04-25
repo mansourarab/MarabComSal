@@ -51,11 +51,17 @@
     <Compile Include="Class_NewAccount.cs" />
     <Compile Include="Class_Info.cs" />
     <Compile Include="Class_UpdatePassword.cs" />
-    <Compile Include="Form_ContactInfo.cs">
+    <Compile Include="CustomerHomepage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_ContactInfo.Designer.cs">
-      <DependentUpon>Form_ContactInfo.cs</DependentUpon>
+    <Compile Include="CustomerHomepage.Designer.cs">
+      <DependentUpon>CustomerHomepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_UpdateContactInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_UpdateContactInfo.Designer.cs">
+      <DependentUpon>Form_UpdateContactInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_UpdatePassword.cs">
       <SubType>Form</SubType>
@@ -69,11 +75,11 @@
     <Compile Include="Form_ViewInfo.Designer.cs">
       <DependentUpon>Form_ViewInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Homepage.cs">
+    <Compile Include="EmployeeHomepage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Homepage.Designer.cs">
-      <DependentUpon>Homepage.cs</DependentUpon>
+    <Compile Include="EmployeeHomepage.Designer.cs">
+      <DependentUpon>EmployeeHomepage.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_CustomerLogin.cs">
       <SubType>Form</SubType>
@@ -107,8 +113,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form_ContactInfo.resx">
-      <DependentUpon>Form_ContactInfo.cs</DependentUpon>
+    <EmbeddedResource Include="CustomerHomepage.resx">
+      <DependentUpon>CustomerHomepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_UpdateContactInfo.resx">
+      <DependentUpon>Form_UpdateContactInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_CustomerLogin.resx">
       <DependentUpon>Form_CustomerLogin.cs</DependentUpon>
@@ -131,8 +140,8 @@
     <EmbeddedResource Include="Form_ViewInfo.resx">
       <DependentUpon>Form_ViewInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Homepage.resx">
-      <DependentUpon>Homepage.cs</DependentUpon>
+    <EmbeddedResource Include="EmployeeHomepage.resx">
+      <DependentUpon>EmployeeHomepage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
