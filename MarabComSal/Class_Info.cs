@@ -60,21 +60,46 @@ namespace MarabComSal
 
         }
 
-        public DataTable ViewTables()
+        public DataTable ViewAccountTable()
         {
             channel.Open();
 
-            que.CommandText = "";// proc Name
+            que.CommandText = "SP_ViewAccountTable";// proc Name
             que.CommandType = CommandType.StoredProcedure;
             que.Connection = channel;
-            DataTable dt = new DataTable();
-            SqlDataReader dr = que.ExecuteReader();
-            dt.Load(dr);
-
-
-
+            DataTable adt = new DataTable();
+            SqlDataReader adr = que.ExecuteReader();
+            adt.Load(adr);
             channel.Close();
-            return dt;
+            return adt;
+        }
+
+        public DataTable ViewEmployeeTable()
+        {
+            channel.Open();
+
+            que.CommandText = "SP_ViewEmployeeTable";// proc Name
+            que.CommandType = CommandType.StoredProcedure;
+            que.Connection = channel;
+            DataTable edt = new DataTable();
+            SqlDataReader edr = que.ExecuteReader();
+            edt.Load(edr);
+            channel.Close();
+            return edt;
+        }
+
+        public DataTable ViewCustomerTable()
+        {
+            channel.Open();
+
+            que.CommandText = "SP_ViewCustomerTable";// proc Name
+            que.CommandType = CommandType.StoredProcedure;
+            que.Connection = channel;
+            DataTable cdt = new DataTable();
+            SqlDataReader cdr = que.ExecuteReader();
+            cdt.Load(cdr);
+            channel.Close();
+            return cdt;
         }
 
     }

@@ -53,7 +53,10 @@ namespace MarabComSal
             this.Close();
         }
 
-        private void createToolStripMenuItem1_Click(object sender, EventArgs e)
+        
+      
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
             if (Class_Login.UserType == "Adminstrator")
             {
@@ -65,17 +68,16 @@ namespace MarabComSal
             else
             {
                 MessageBox.Show("You're not authorised for this task");
-                
-            }
 
+            }
         }
 
-        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
         {
             if (Class_Login.UserType == "Adminstrator")
             {
-                Form_EmployeeNewAccount newaccount = new Form_EmployeeNewAccount();
-                newaccount.Show();
+                Form_ModifyAccount changes = new Form_ModifyAccount();
+                changes.Show();
                 this.Close();
             }
 
