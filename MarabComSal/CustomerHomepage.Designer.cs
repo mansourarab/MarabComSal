@@ -92,7 +92,7 @@ namespace MarabComSal
             this.updatePasswordEmailToolStripMenuItem.Name = "updatePasswordEmailToolStripMenuItem";
             this.updatePasswordEmailToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.updatePasswordEmailToolStripMenuItem.Text = "Password";
-            this.updatePasswordEmailToolStripMenuItem.Click += new System.EventHandler(this.updatePasswordEmailToolStripMenuItem_Click_1);
+            
             // 
             // contactInfoToolStripMenuItem
             // 

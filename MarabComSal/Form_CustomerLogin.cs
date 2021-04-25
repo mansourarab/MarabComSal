@@ -26,17 +26,29 @@ namespace MarabComSal
         {
             Class_Login newlogin = new Class_Login();
             int? AccountId;
-            int result =newlogin.CheckUser(Tb_Username.Text, Tb_Password.Text, out AccountId);
+            string UserType;
+            int result =newlogin.CheckUser(Tb_Username.Text, Tb_Password.Text, out AccountId, out UserType);
             if (result == 1)
             {
                 lbl_status.ForeColor = System.Drawing.Color.Green;
                 lbl_status.Text = "Loggied in Successfully!";
 
                 Class_Login.AccountId = AccountId;
-                
-                CustomerHomepage Hform = new CustomerHomepage();
-                this.Close();
-                Hform.Show();
+                Class_Login.UserType = UserType;
+
+                if (UserType == "Employee" || UserType == "Adminstrator")
+                {
+                    EmployeeHomepage Hform = new EmployeeHomepage();
+                    this.Close();
+                    Hform.Show();
+                }
+
+                if (UserType == "Customer")
+                {
+                    CustomerHomepage Hform = new CustomerHomepage();
+                    this.Close();
+                    Hform.Show();
+                }
 
             }
             else

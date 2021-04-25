@@ -47,9 +47,19 @@ namespace MarabComSal
 
         private void Btn_Back_Click(object sender, EventArgs e)
         {
-            EmployeeHomepage backto = new EmployeeHomepage();
-            backto.Show();
-            this.Close();
+            if (Class_Login.UserType == "Employee" || Class_Login.UserType == "Adminstrator")
+            {
+                EmployeeHomepage backto = new EmployeeHomepage();
+                backto.Show();
+                this.Close();
+            }
+
+            if (Class_Login.UserType == "Customer")
+            {
+                CustomerHomepage backto = new CustomerHomepage();
+                backto.Show();
+                this.Close();
+            }
         }
     }
 }
