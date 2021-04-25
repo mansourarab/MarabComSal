@@ -30,36 +30,37 @@ namespace MarabComSal
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Tb_CompanyEmail = new System.Windows.Forms.TextBox();
+            this.Tb_Department = new System.Windows.Forms.TextBox();
+            this.Tb_Gender = new System.Windows.Forms.TextBox();
+            this.Tb_Phone = new System.Windows.Forms.TextBox();
+            this.Tb_Address = new System.Windows.Forms.TextBox();
+            this.Tb_fullname = new System.Windows.Forms.TextBox();
+            this.Tb_Username = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.Gb_Modify = new System.Windows.Forms.GroupBox();
+            this.Tb_Delete = new System.Windows.Forms.TextBox();
             this.Lbl_Deleteusername = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.Tb_AdminPassword = new System.Windows.Forms.TextBox();
+            this.Tb_Adminusername = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.Btn_Save = new System.Windows.Forms.Button();
             this.Btn_Back = new System.Windows.Forms.Button();
-            this.Tb_Username = new System.Windows.Forms.TextBox();
-            this.Tb_fullname = new System.Windows.Forms.TextBox();
-            this.Tb_Address = new System.Windows.Forms.TextBox();
-            this.Tb_Phone = new System.Windows.Forms.TextBox();
-            this.Tb_Gender = new System.Windows.Forms.TextBox();
-            this.Tb_Department = new System.Windows.Forms.TextBox();
-            this.Tb_CompanyEmail = new System.Windows.Forms.TextBox();
-            this.Tb_Delete = new System.Windows.Forms.TextBox();
-            this.Tb_Adminusername = new System.Windows.Forms.TextBox();
-            this.Tb_AdminPassword = new System.Windows.Forms.TextBox();
             this.Dgv_Acc = new System.Windows.Forms.DataGridView();
             this.Dgv_Cus = new System.Windows.Forms.DataGridView();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.Dgv_Emp = new System.Windows.Forms.DataGridView();
+            this.Lbl_status = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.Gb_Modify.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -92,6 +93,125 @@ namespace MarabComSal
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Modify Account";
             // 
+            // Tb_CompanyEmail
+            // 
+            this.Tb_CompanyEmail.Location = new System.Drawing.Point(195, 266);
+            this.Tb_CompanyEmail.Name = "Tb_CompanyEmail";
+            this.Tb_CompanyEmail.Size = new System.Drawing.Size(177, 27);
+            this.Tb_CompanyEmail.TabIndex = 14;
+            // 
+            // Tb_Department
+            // 
+            this.Tb_Department.Location = new System.Drawing.Point(195, 233);
+            this.Tb_Department.Name = "Tb_Department";
+            this.Tb_Department.Size = new System.Drawing.Size(177, 27);
+            this.Tb_Department.TabIndex = 13;
+            // 
+            // Tb_Gender
+            // 
+            this.Tb_Gender.Location = new System.Drawing.Point(195, 200);
+            this.Tb_Gender.Name = "Tb_Gender";
+            this.Tb_Gender.Size = new System.Drawing.Size(177, 27);
+            this.Tb_Gender.TabIndex = 12;
+            // 
+            // Tb_Phone
+            // 
+            this.Tb_Phone.Location = new System.Drawing.Point(195, 166);
+            this.Tb_Phone.Name = "Tb_Phone";
+            this.Tb_Phone.Size = new System.Drawing.Size(177, 27);
+            this.Tb_Phone.TabIndex = 11;
+            // 
+            // Tb_Address
+            // 
+            this.Tb_Address.Location = new System.Drawing.Point(195, 127);
+            this.Tb_Address.Name = "Tb_Address";
+            this.Tb_Address.Size = new System.Drawing.Size(177, 27);
+            this.Tb_Address.TabIndex = 10;
+            // 
+            // Tb_fullname
+            // 
+            this.Tb_fullname.Location = new System.Drawing.Point(195, 90);
+            this.Tb_fullname.Name = "Tb_fullname";
+            this.Tb_fullname.Size = new System.Drawing.Size(177, 27);
+            this.Tb_fullname.TabIndex = 9;
+            // 
+            // Tb_Username
+            // 
+            this.Tb_Username.Location = new System.Drawing.Point(195, 58);
+            this.Tb_Username.Name = "Tb_Username";
+            this.Tb_Username.Size = new System.Drawing.Size(177, 27);
+            this.Tb_Username.TabIndex = 8;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.label9.Location = new System.Drawing.Point(31, 270);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(119, 17);
+            this.label9.TabIndex = 7;
+            this.label9.Text = "Company Email:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.label8.Location = new System.Drawing.Point(31, 236);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(96, 17);
+            this.label8.TabIndex = 6;
+            this.label8.Text = "Department:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.label7.Location = new System.Drawing.Point(31, 206);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(63, 17);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "Gender:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.label6.Location = new System.Drawing.Point(31, 172);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(57, 17);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Phone:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(31, 132);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(69, 17);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Address:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(31, 94);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(74, 17);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Fullname:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(30, 61);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(143, 17);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Account Username:";
+            // 
             // Gb_Modify
             // 
             this.Gb_Modify.Controls.Add(this.Tb_Delete);
@@ -103,6 +223,13 @@ namespace MarabComSal
             this.Gb_Modify.TabIndex = 1;
             this.Gb_Modify.TabStop = false;
             this.Gb_Modify.Text = "Delete Account";
+            // 
+            // Tb_Delete
+            // 
+            this.Tb_Delete.Location = new System.Drawing.Point(195, 36);
+            this.Tb_Delete.Name = "Tb_Delete";
+            this.Tb_Delete.Size = new System.Drawing.Size(177, 27);
+            this.Tb_Delete.TabIndex = 15;
             // 
             // Lbl_Deleteusername
             // 
@@ -128,6 +255,20 @@ namespace MarabComSal
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Adminstrator Authentication";
             // 
+            // Tb_AdminPassword
+            // 
+            this.Tb_AdminPassword.Location = new System.Drawing.Point(230, 76);
+            this.Tb_AdminPassword.Name = "Tb_AdminPassword";
+            this.Tb_AdminPassword.Size = new System.Drawing.Size(177, 27);
+            this.Tb_AdminPassword.TabIndex = 17;
+            // 
+            // Tb_Adminusername
+            // 
+            this.Tb_Adminusername.Location = new System.Drawing.Point(230, 40);
+            this.Tb_Adminusername.Name = "Tb_Adminusername";
+            this.Tb_Adminusername.Size = new System.Drawing.Size(177, 27);
+            this.Tb_Adminusername.TabIndex = 16;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -148,76 +289,6 @@ namespace MarabComSal
             this.label2.TabIndex = 1;
             this.label2.Text = "Adminstrator Username:";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(30, 61);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(143, 17);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Account Username:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(31, 94);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 17);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Fullname:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(31, 132);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 17);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Address:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(31, 172);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(57, 17);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Phone:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(31, 206);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(63, 17);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Gender:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.label8.Location = new System.Drawing.Point(31, 236);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(96, 17);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "Department:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.label9.Location = new System.Drawing.Point(31, 270);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(119, 17);
-            this.label9.TabIndex = 7;
-            this.label9.Text = "Company Email:";
-            // 
             // Btn_Save
             // 
             this.Btn_Save.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
@@ -227,6 +298,7 @@ namespace MarabComSal
             this.Btn_Save.TabIndex = 4;
             this.Btn_Save.Text = "Save Changes!";
             this.Btn_Save.UseVisualStyleBackColor = true;
+            this.Btn_Save.Click += new System.EventHandler(this.Btn_Save_Click);
             // 
             // Btn_Back
             // 
@@ -237,76 +309,6 @@ namespace MarabComSal
             this.Btn_Back.TabIndex = 5;
             this.Btn_Back.Text = "Back";
             this.Btn_Back.UseVisualStyleBackColor = true;
-            // 
-            // Tb_Username
-            // 
-            this.Tb_Username.Location = new System.Drawing.Point(195, 58);
-            this.Tb_Username.Name = "Tb_Username";
-            this.Tb_Username.Size = new System.Drawing.Size(177, 27);
-            this.Tb_Username.TabIndex = 8;
-            // 
-            // Tb_fullname
-            // 
-            this.Tb_fullname.Location = new System.Drawing.Point(195, 90);
-            this.Tb_fullname.Name = "Tb_fullname";
-            this.Tb_fullname.Size = new System.Drawing.Size(177, 27);
-            this.Tb_fullname.TabIndex = 9;
-            // 
-            // Tb_Address
-            // 
-            this.Tb_Address.Location = new System.Drawing.Point(195, 127);
-            this.Tb_Address.Name = "Tb_Address";
-            this.Tb_Address.Size = new System.Drawing.Size(177, 27);
-            this.Tb_Address.TabIndex = 10;
-            // 
-            // Tb_Phone
-            // 
-            this.Tb_Phone.Location = new System.Drawing.Point(195, 166);
-            this.Tb_Phone.Name = "Tb_Phone";
-            this.Tb_Phone.Size = new System.Drawing.Size(177, 27);
-            this.Tb_Phone.TabIndex = 11;
-            // 
-            // Tb_Gender
-            // 
-            this.Tb_Gender.Location = new System.Drawing.Point(195, 200);
-            this.Tb_Gender.Name = "Tb_Gender";
-            this.Tb_Gender.Size = new System.Drawing.Size(177, 27);
-            this.Tb_Gender.TabIndex = 12;
-            // 
-            // Tb_Department
-            // 
-            this.Tb_Department.Location = new System.Drawing.Point(195, 233);
-            this.Tb_Department.Name = "Tb_Department";
-            this.Tb_Department.Size = new System.Drawing.Size(177, 27);
-            this.Tb_Department.TabIndex = 13;
-            // 
-            // Tb_CompanyEmail
-            // 
-            this.Tb_CompanyEmail.Location = new System.Drawing.Point(195, 266);
-            this.Tb_CompanyEmail.Name = "Tb_CompanyEmail";
-            this.Tb_CompanyEmail.Size = new System.Drawing.Size(177, 27);
-            this.Tb_CompanyEmail.TabIndex = 14;
-            // 
-            // Tb_Delete
-            // 
-            this.Tb_Delete.Location = new System.Drawing.Point(195, 36);
-            this.Tb_Delete.Name = "Tb_Delete";
-            this.Tb_Delete.Size = new System.Drawing.Size(177, 27);
-            this.Tb_Delete.TabIndex = 15;
-            // 
-            // Tb_Adminusername
-            // 
-            this.Tb_Adminusername.Location = new System.Drawing.Point(230, 40);
-            this.Tb_Adminusername.Name = "Tb_Adminusername";
-            this.Tb_Adminusername.Size = new System.Drawing.Size(177, 27);
-            this.Tb_Adminusername.TabIndex = 16;
-            // 
-            // Tb_AdminPassword
-            // 
-            this.Tb_AdminPassword.Location = new System.Drawing.Point(230, 76);
-            this.Tb_AdminPassword.Name = "Tb_AdminPassword";
-            this.Tb_AdminPassword.Size = new System.Drawing.Size(177, 27);
-            this.Tb_AdminPassword.TabIndex = 17;
             // 
             // Dgv_Acc
             // 
@@ -362,11 +364,20 @@ namespace MarabComSal
             this.Dgv_Emp.Size = new System.Drawing.Size(798, 153);
             this.Dgv_Emp.TabIndex = 10;
             // 
+            // Lbl_status
+            // 
+            this.Lbl_status.AutoSize = true;
+            this.Lbl_status.Location = new System.Drawing.Point(270, 661);
+            this.Lbl_status.Name = "Lbl_status";
+            this.Lbl_status.Size = new System.Drawing.Size(0, 13);
+            this.Lbl_status.TabIndex = 12;
+            // 
             // Form_ModifyAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1462, 705);
+            this.Controls.Add(this.Lbl_status);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.Dgv_Emp);
             this.Controls.Add(this.label11);
@@ -428,5 +439,6 @@ namespace MarabComSal
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DataGridView Dgv_Emp;
+        private System.Windows.Forms.Label Lbl_status;
     }
 }

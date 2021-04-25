@@ -43,6 +43,23 @@ namespace MarabComSal
             }
         }
 
-       
+        private void Btn_Save_Click(object sender, EventArgs e)
+        {
+            Class_NewAccount modify = new Class_NewAccount();
+            int modified = modify.ModifyAccount(Tb_Username.Text, Tb_fullname.Text, Tb_Address.Text, Tb_Phone.Text, Tb_Gender.Text, Tb_Department.Text, Tb_CompanyEmail.Text, Tb_Delete.Text, Tb_Adminusername.Text, Tb_AdminPassword.Text);
+
+            if (modified == 1)
+            {
+                Lbl_status.ForeColor = System.Drawing.Color.Green;
+                Lbl_status.Text = "Changes were carried successfully!";
+            }
+
+            if (modified == 0)
+            {
+                Lbl_status.ForeColor = System.Drawing.Color.Red;
+                Lbl_status.Text = "Something went wrong, please re-do the work!";
+                
+            }
+        }
     }   
 }
