@@ -56,9 +56,9 @@ namespace MarabComSal
                 if (EmployeeNewAccount != 0)
                 {
                     MessageBox.Show("Your account was Created successfully!");
-                    Form_Login forwardtologin = new Form_Login();
+                    EmployeeHomepage forwardtoemp = new EmployeeHomepage();
                     this.Close();
-                    forwardtologin.Show();
+                    forwardtoemp.Show();
                 }
             }
         }

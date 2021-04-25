@@ -27,9 +27,9 @@ namespace MarabComSal
         private void Btn_Savechanges_Click(object sender, EventArgs e)
         {
             Class_Info updateinfo = new Class_Info();
-            int returned = updateinfo.UpdateContactinfo(Tb_PhoneData.Text, Tb_AddressData.Text, Class_Login.AccountId);
+            int result = updateinfo.UpdateContactinfo(Tb_PhoneData.Text, Tb_AddressData.Text, Class_Login.AccountId);
             
-            if (returned != null)
+            if (result == 1)
             {
                 Lbl_Status.ForeColor = System.Drawing.Color.Green;
                 Lbl_Status.Text = "Changes were Saved Successfully!";

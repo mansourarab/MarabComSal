@@ -71,83 +71,83 @@ namespace MarabComSal
             return returned;
         }
 
-        public int ModifyAccount(string Accountname, string Fullname, string Address, string Phone, string Gender, string Department, string companyemail, string Deleteuser, string Adminuser, string Adminpass)
+        public int ModifyDeleteAccount(string Accountname, string Fullname, string Address, string Phone, string Gender, string Department, string companyemail, string Deleteuser, string Adminuser, string Adminpass)
         {
-            if (Accountname != null && Deleteuser != null)
-            {
-               
-                channel.Open();
 
-                que.CommandText = "SP_ModifyNDelete";
-                que.CommandType = CommandType.StoredProcedure;
-                que.Connection = channel;
-                que.Parameters.Clear();
-                que.Parameters.AddWithValue("@accountname", Accountname);
-                que.Parameters.AddWithValue("@fullname", Fullname);
-                que.Parameters.AddWithValue("@address", Address);
-                que.Parameters.AddWithValue("@phone", Phone);
-                que.Parameters.AddWithValue("@gender", Gender);
-                que.Parameters.AddWithValue("@department", Department);
-                que.Parameters.AddWithValue("@comemail", companyemail);
-                que.Parameters.AddWithValue("@deleteuser", Deleteuser);
-                que.Parameters.AddWithValue("@adminuser", Adminuser);
-                que.Parameters.AddWithValue("@adminpass", Adminpass);
+            channel.Open();
+
+            que.CommandText = "SP_ModifyNDelete";
+            que.CommandType = CommandType.StoredProcedure;
+            que.Connection = channel;
+            que.Parameters.Clear();
+            que.Parameters.AddWithValue("@accountname", Accountname);
+            que.Parameters.AddWithValue("@fullname", Fullname);
+            que.Parameters.AddWithValue("@address", Address);
+            que.Parameters.AddWithValue("@phone", Phone);
+            que.Parameters.AddWithValue("@gender", Gender);
+            que.Parameters.AddWithValue("@department", Department);
+            que.Parameters.AddWithValue("@comemail", companyemail);
+            que.Parameters.AddWithValue("@deleteuser", Deleteuser);
+            que.Parameters.AddWithValue("@adminuser", Adminuser);
+            que.Parameters.AddWithValue("@adminpass", Adminpass);
 
 
-                int returned = que.ExecuteNonQuery();
+            int returned = que.ExecuteNonQuery();
 
 
-                channel.Close();
-                return returned;
-            }
-
-            if (Accountname == null && Deleteuser != null)
-            {
-
-                channel.Open();
-
-                que.CommandText = "";
-                que.CommandType = CommandType.StoredProcedure;
-                que.Connection = channel;
-                que.Parameters.Clear();
-                que.Parameters.AddWithValue("@deleteuser", Deleteuser);
-                que.Parameters.AddWithValue("@adminuser", Adminuser);
-                que.Parameters.AddWithValue("@adminpass", Adminpass);
-
-                int returned = que.ExecuteNonQuery();
-
-
-                channel.Close();
-                return returned;
-            }
-
-            if (Accountname != null && Deleteuser == null)
-            {
-
-                channel.Open();
-
-                que.CommandText = "";
-                que.CommandType = CommandType.StoredProcedure;
-                que.Connection = channel;
-                que.Parameters.Clear();
-                que.Parameters.AddWithValue("@accountname", Accountname);
-                que.Parameters.AddWithValue("@fullname", Fullname);
-                que.Parameters.AddWithValue("@address", Address);
-                que.Parameters.AddWithValue("@phone", Phone);
-                que.Parameters.AddWithValue("@gender", Gender);
-                que.Parameters.AddWithValue("@department", Department);
-                que.Parameters.AddWithValue("@comemail", companyemail);
-                que.Parameters.AddWithValue("@deleteuser", Deleteuser);
-                que.Parameters.AddWithValue("@adminuser", Adminuser);
-                que.Parameters.AddWithValue("@adminpass", Adminpass);
-
-                int returned = que.ExecuteNonQuery();
-
-
-                channel.Close();
-                return returned;
-            }
-
+            channel.Close();
+            return returned;
         }
+
+        public int DeleteAccount(string Deleteuser, string Adminuser, string Adminpass)
+        {
+
+            channel.Open();
+
+            que.CommandText = "SP_Delete";
+            que.CommandType = CommandType.StoredProcedure;
+            que.Connection = channel;
+            que.Parameters.Clear();
+            que.Parameters.AddWithValue("@deleteuser", Deleteuser);
+            que.Parameters.AddWithValue("@adminuser", Adminuser);
+            que.Parameters.AddWithValue("@adminpass", Adminpass);
+
+            int returned = que.ExecuteNonQuery();
+
+
+            channel.Close();
+            return returned;
+        }
+
+
+
+        public int ModifyAccount(string Accountname, string Fullname, string Address, string Phone, string Gender, string Department, string companyemail, string Adminuser, string Adminpass)
+        {
+
+            channel.Open();
+
+            que.CommandText = "SP_Modify";
+            que.CommandType = CommandType.StoredProcedure;
+            que.Connection = channel;
+            que.Parameters.Clear();
+            que.Parameters.AddWithValue("@accountname", Accountname);
+            que.Parameters.AddWithValue("@fullname", Fullname);
+            que.Parameters.AddWithValue("@address", Address);
+            que.Parameters.AddWithValue("@phone", Phone);
+            que.Parameters.AddWithValue("@gender", Gender);
+            que.Parameters.AddWithValue("@department", Department);
+            que.Parameters.AddWithValue("@comemail", companyemail);
+            que.Parameters.AddWithValue("@adminuser", Adminuser);
+            que.Parameters.AddWithValue("@adminpass", Adminpass);
+
+            int returned = que.ExecuteNonQuery();
+
+
+            channel.Close();
+            return returned;
+        }
+
+            
+        
     }
 }

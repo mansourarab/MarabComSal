@@ -88,20 +88,7 @@ namespace MarabComSal
             }
         }
 
-        private void deleteAndModifyToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            if (Class_Login.UserType == "Adminstrator")
-            {
-                Form_ModifyAccount memo = new Form_ModifyAccount();
-                memo.Show();
-                this.Close();
-            }
-
-            else
-            {
-                MessageBox.Show("You're not authorised for this task");
-
-            }
-        }
+       
+       
     }
 }

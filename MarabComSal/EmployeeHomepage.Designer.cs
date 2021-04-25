@@ -46,8 +46,6 @@ namespace MarabComSal
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Lbl_Welcome = new System.Windows.Forms.Label();
             this.modifyAndDeleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteAndModifyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteAndModifyToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -57,8 +55,7 @@ namespace MarabComSal
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.myProfileToolStripMenuItem,
             this.adminstratorAuthoritiesToolStripMenuItem,
-            this.toolStripMenuItem1,
-            this.deleteAndModifyToolStripMenuItem});
+            this.toolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -201,21 +198,6 @@ namespace MarabComSal
             this.modifyAndDeleteToolStripMenuItem.Text = "Modify and Delete";
             this.modifyAndDeleteToolStripMenuItem.Click += new System.EventHandler(this.modifyAndDeleteToolStripMenuItem_Click);
             // 
-            // deleteAndModifyToolStripMenuItem
-            // 
-            this.deleteAndModifyToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.deleteAndModifyToolStripMenuItem1});
-            this.deleteAndModifyToolStripMenuItem.Name = "deleteAndModifyToolStripMenuItem";
-            this.deleteAndModifyToolStripMenuItem.Size = new System.Drawing.Size(116, 20);
-            this.deleteAndModifyToolStripMenuItem.Text = "Delete and Modify";
-            // 
-            // deleteAndModifyToolStripMenuItem1
-            // 
-            this.deleteAndModifyToolStripMenuItem1.Name = "deleteAndModifyToolStripMenuItem1";
-            this.deleteAndModifyToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.deleteAndModifyToolStripMenuItem1.Text = "Delete and Modify";
-            this.deleteAndModifyToolStripMenuItem1.Click += new System.EventHandler(this.deleteAndModifyToolStripMenuItem1_Click);
-            // 
             // EmployeeHomepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -255,8 +237,6 @@ namespace MarabComSal
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem modifyAndDeleteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem deleteAndModifyToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem deleteAndModifyToolStripMenuItem1;
     }
 }
 

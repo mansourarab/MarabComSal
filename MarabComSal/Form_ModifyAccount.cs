@@ -46,20 +46,71 @@ namespace MarabComSal
         private void Btn_Save_Click(object sender, EventArgs e)
         {
             Class_NewAccount modify = new Class_NewAccount();
-            int modified = modify.ModifyAccount(Tb_Username.Text, Tb_fullname.Text, Tb_Address.Text, Tb_Phone.Text, Tb_Gender.Text, Tb_Department.Text, Tb_CompanyEmail.Text, Tb_Delete.Text, Tb_Adminusername.Text, Tb_AdminPassword.Text);
+            Tb_Username = null;
+            Tb_Delete = null;
 
-            if (modified == 1)
+            if (Tb_Username != null && Tb_Delete != null)
             {
-                Lbl_status.ForeColor = System.Drawing.Color.Green;
-                Lbl_status.Text = "Changes were carried successfully!";
+                int modified = modify.ModifyDeleteAccount(Tb_Username.Text, Tb_fullname.Text, Tb_Address.Text, Tb_Phone.Text, Tb_Gender.Text, Tb_Department.Text, Tb_CompanyEmail.Text, Tb_Delete.Text, Tb_Adminusername.Text, Tb_AdminPassword.Text);
+
+                if (modified == 1)
+                {
+                    Lbl_status.ForeColor = System.Drawing.Color.Green;
+                    Lbl_status.Text = "Changes were carried successfully!";
+                }
+
+                if (modified == 0)
+                {
+                    Lbl_status.ForeColor = System.Drawing.Color.Red;
+                    Lbl_status.Text = "Something went wrong, please re-do the work!";
+
+                }
             }
 
-            if (modified == 0)
+            if (Tb_Username == null && Tb_Delete != null)
             {
-                Lbl_status.ForeColor = System.Drawing.Color.Red;
-                Lbl_status.Text = "Something went wrong, please re-do the work!";
-                
+                int modified = modify.DeleteAccount(Tb_Delete.Text, Tb_Adminusername.Text, Tb_AdminPassword.Text);
+
+                if (modified == 1)
+                {
+                    Lbl_status.ForeColor = System.Drawing.Color.Green;
+                    Lbl_status.Text = "Changes were carried successfully!";
+                }
+
+                if (modified == 0)
+                {
+                    Lbl_status.ForeColor = System.Drawing.Color.Red;
+                    Lbl_status.Text = "Something went wrong, please re-do the work!";
+
+                }
             }
+
+            if (Tb_Username != null && Tb_Delete == null)
+            {
+                int modified = modify.ModifyAccount(Tb_Username.Text, Tb_fullname.Text, Tb_Address.Text, Tb_Phone.Text, Tb_Gender.Text, Tb_Department.Text, Tb_CompanyEmail.Text, Tb_Adminusername.Text, Tb_AdminPassword.Text);
+
+                if (modified == 1)
+                {
+                    Lbl_status.ForeColor = System.Drawing.Color.Green;
+                    Lbl_status.Text = "Changes were carried successfully!";
+                }
+
+                if (modified == 0)
+                {
+                    Lbl_status.ForeColor = System.Drawing.Color.Red;
+                    Lbl_status.Text = "Something went wrong, please re-do the work!";
+
+                }
+            }
+
+
+        }
+
+        private void Btn_Back_Click(object sender, EventArgs e)
+        {
+            EmployeeHomepage backto = new EmployeeHomepage();
+            backto.Show();
+            this.Close();
         }
     }   
 }
