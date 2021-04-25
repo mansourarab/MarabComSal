@@ -57,6 +57,12 @@
     <Compile Include="CustomerHomepage.Designer.cs">
       <DependentUpon>CustomerHomepage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_ModifyAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ModifyAccount.Designer.cs">
+      <DependentUpon>Form_ModifyAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_UpdateContactInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CustomerHomepage.resx">
       <DependentUpon>CustomerHomepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ModifyAccount.resx">
+      <DependentUpon>Form_ModifyAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_UpdateContactInfo.resx">
       <DependentUpon>Form_UpdateContactInfo.cs</DependentUpon>
