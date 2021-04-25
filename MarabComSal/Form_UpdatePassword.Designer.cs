@@ -72,6 +72,7 @@ namespace MarabComSal
             this.Tb_NewpassData.Name = "Tb_NewpassData";
             this.Tb_NewpassData.Size = new System.Drawing.Size(129, 24);
             this.Tb_NewpassData.TabIndex = 6;
+            this.Tb_NewpassData.PasswordChar = '*';
             // 
             // Tb_OldpassData
             // 
@@ -80,6 +81,7 @@ namespace MarabComSal
             this.Tb_OldpassData.Name = "Tb_OldpassData";
             this.Tb_OldpassData.Size = new System.Drawing.Size(129, 24);
             this.Tb_OldpassData.TabIndex = 5;
+            this.Tb_OldpassData.PasswordChar = '*';
             // 
             // Btn_Back
             // 

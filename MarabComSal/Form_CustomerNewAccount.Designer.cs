@@ -154,6 +154,7 @@ namespace MarabComSal
             this.tb_password.Name = "tb_password";
             this.tb_password.Size = new System.Drawing.Size(186, 21);
             this.tb_password.TabIndex = 11;
+            this.tb_password.PasswordChar = '*';
             // 
             // Tb_Username
             // 

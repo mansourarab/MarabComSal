@@ -105,16 +105,19 @@ namespace MarabComSal
             // 
             // Tb_Password
             // 
+            this.Tb_Password.Font = new System.Drawing.Font("Tahoma", 12F);
             this.Tb_Password.Location = new System.Drawing.Point(148, 162);
             this.Tb_Password.Name = "Tb_Password";
-            this.Tb_Password.Size = new System.Drawing.Size(174, 30);
+            this.Tb_Password.Size = new System.Drawing.Size(174, 27);
             this.Tb_Password.TabIndex = 4;
+            this.Tb_Password.PasswordChar = '*';
             // 
             // Tb_Username
             // 
+            this.Tb_Username.Font = new System.Drawing.Font("Tahoma", 12F);
             this.Tb_Username.Location = new System.Drawing.Point(148, 118);
             this.Tb_Username.Name = "Tb_Username";
-            this.Tb_Username.Size = new System.Drawing.Size(174, 30);
+            this.Tb_Username.Size = new System.Drawing.Size(174, 27);
             this.Tb_Username.TabIndex = 3;
             // 
             // Lbl_Pleaseenter
