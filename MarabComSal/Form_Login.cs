@@ -27,7 +27,9 @@ namespace MarabComSal
             Class_Login newlogin = new Class_Login();
             int? AccountId;
             string UserType;
-            int result =newlogin.CheckUser(Tb_Username.Text, Tb_Password.Text, out AccountId, out UserType);
+            string Uname;
+
+            int result =newlogin.CheckUser(Tb_Username.Text, Tb_Password.Text, out AccountId, out UserType, out Uname);
             if (result == 1)
             {
                 lbl_status.ForeColor = System.Drawing.Color.Green;
@@ -35,6 +37,7 @@ namespace MarabComSal
 
                 Class_Login.AccountId = AccountId;
                 Class_Login.UserType = UserType;
+                Class_Login.uname = Uname;
 
                 if (UserType == "Employee" || UserType == "Adminstrator")
                 {

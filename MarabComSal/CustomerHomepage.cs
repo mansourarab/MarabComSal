@@ -19,7 +19,7 @@ namespace MarabComSal
 
         private void CustomerHomepage_Load(object sender, EventArgs e)
         {
-
+            Lbl_user.Text = Class_Login.uname;
         }
 
         private void viewToolStripMenuItem1_Click(object sender, EventArgs e)

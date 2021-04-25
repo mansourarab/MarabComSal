@@ -21,7 +21,8 @@ namespace MarabComSal
 
         public static int? AccountId { get; set; }
         public static string UserType { get; set; }
-        public int CheckUser(string username, string password, out int? AccountId, out string usertype)
+        public static string uname { get; set; }
+        public int CheckUser(string username, string password, out int? AccountId, out string usertype, out string uname)
         {
             channel.Open();
 
@@ -33,17 +34,21 @@ namespace MarabComSal
             que.Parameters.Add("@returned", SqlDbType.Int).Direction = ParameterDirection.ReturnValue;
             que.Parameters.Add("@accountid", SqlDbType.Int).Direction = ParameterDirection.Output;
             que.Parameters.Add("@usertype", SqlDbType.VarChar, 50).Direction = ParameterDirection.Output;
+            que.Parameters.Add("@uname", SqlDbType.VarChar, 50).Direction = ParameterDirection.Output;
+
             que.ExecuteNonQuery();//
             int returned = (int)que.Parameters["@returned"].Value;
             if (que.Parameters["@accountid"].Value is DBNull)
             {
                 AccountId = null;
                 usertype = null;
+                uname = null;
             }
             else
             {
                 AccountId = (int)que.Parameters["@accountid"].Value;
                 usertype = (string)que.Parameters["@usertype"].Value;
+                uname = (string)que.Parameters["@uname"].Value;
             }
 
             channel.Close();

@@ -106,9 +106,10 @@ namespace MarabComSal
             // lbl_status
             // 
             this.lbl_status.AutoSize = true;
-            this.lbl_status.Location = new System.Drawing.Point(158, 432);
+            this.lbl_status.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.lbl_status.Location = new System.Drawing.Point(29, 424);
             this.lbl_status.Name = "lbl_status";
-            this.lbl_status.Size = new System.Drawing.Size(0, 19);
+            this.lbl_status.Size = new System.Drawing.Size(0, 17);
             this.lbl_status.TabIndex = 16;
             // 
             // Btn_Create

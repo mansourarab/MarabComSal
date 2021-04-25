@@ -43,6 +43,8 @@ namespace MarabComSal
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Lbl_Welcome = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.Lbl_Welcomeuser = new System.Windows.Forms.Label();
+            this.Lbl_user = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -125,30 +127,32 @@ namespace MarabComSal
             // 
             this.createToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.createToolStripMenuItem.Name = "createToolStripMenuItem";
-            this.createToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.createToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.createToolStripMenuItem.Text = "Create";
             // 
             // viewToolStripMenuItem
             // 
             this.viewToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.viewToolStripMenuItem.Text = "View";
             // 
             // modifyOrCancelToolStripMenuItem
             // 
             this.modifyOrCancelToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.modifyOrCancelToolStripMenuItem.Name = "modifyOrCancelToolStripMenuItem";
-            this.modifyOrCancelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.modifyOrCancelToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.modifyOrCancelToolStripMenuItem.Text = "Modify or Cancel";
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.Lbl_user);
+            this.groupBox1.Controls.Add(this.Lbl_Welcomeuser);
             this.groupBox1.Controls.Add(this.Lbl_Welcome);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Location = new System.Drawing.Point(558, 27);
+            this.groupBox1.Location = new System.Drawing.Point(490, 27);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(242, 65);
+            this.groupBox1.Size = new System.Drawing.Size(310, 65);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             // 
@@ -165,10 +169,29 @@ namespace MarabComSal
             this.dateTimePicker1.CalendarForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.AppWorkspace;
             this.dateTimePicker1.Font = new System.Drawing.Font("Lucida Calligraphy", 8F);
-            this.dateTimePicker1.Location = new System.Drawing.Point(6, 37);
+            this.dateTimePicker1.Location = new System.Drawing.Point(92, 37);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(212, 22);
             this.dateTimePicker1.TabIndex = 1;
+            // 
+            // Lbl_Welcomeuser
+            // 
+            this.Lbl_Welcomeuser.AutoSize = true;
+            this.Lbl_Welcomeuser.Font = new System.Drawing.Font("Monotype Corsiva", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.Lbl_Welcomeuser.Location = new System.Drawing.Point(3, 8);
+            this.Lbl_Welcomeuser.Name = "Lbl_Welcomeuser";
+            this.Lbl_Welcomeuser.Size = new System.Drawing.Size(100, 26);
+            this.Lbl_Welcomeuser.TabIndex = 3;
+            this.Lbl_Welcomeuser.Text = "Welcome !";
+            // 
+            // Lbl_user
+            // 
+            this.Lbl_user.AutoSize = true;
+            this.Lbl_user.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_user.Location = new System.Drawing.Point(124, 8);
+            this.Lbl_user.Name = "Lbl_user";
+            this.Lbl_user.Size = new System.Drawing.Size(0, 22);
+            this.Lbl_user.TabIndex = 4;
             // 
             // CustomerHomepage
             // 
@@ -205,5 +228,7 @@ namespace MarabComSal
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label Lbl_Welcome;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label Lbl_user;
+        private System.Windows.Forms.Label Lbl_Welcomeuser;
     }
 }

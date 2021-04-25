@@ -42,10 +42,12 @@ namespace MarabComSal
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.modifyAndDeleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Lbl_Welcome = new System.Windows.Forms.Label();
-            this.modifyAndDeleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Lbl_Welcomeuser = new System.Windows.Forms.Label();
+            this.Lbl_user = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -159,27 +161,36 @@ namespace MarabComSal
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(171, 22);
             this.toolStripMenuItem3.Text = "Create";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
+            // 
+            // modifyAndDeleteToolStripMenuItem
+            // 
+            this.modifyAndDeleteToolStripMenuItem.Name = "modifyAndDeleteToolStripMenuItem";
+            this.modifyAndDeleteToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.modifyAndDeleteToolStripMenuItem.Text = "Modify and Delete";
+            this.modifyAndDeleteToolStripMenuItem.Click += new System.EventHandler(this.modifyAndDeleteToolStripMenuItem_Click);
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.CalendarForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.AppWorkspace;
             this.dateTimePicker1.Font = new System.Drawing.Font("Lucida Calligraphy", 8F);
-            this.dateTimePicker1.Location = new System.Drawing.Point(6, 37);
+            this.dateTimePicker1.Location = new System.Drawing.Point(127, 37);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(212, 22);
             this.dateTimePicker1.TabIndex = 1;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.Lbl_user);
+            this.groupBox1.Controls.Add(this.Lbl_Welcomeuser);
             this.groupBox1.Controls.Add(this.Lbl_Welcome);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Location = new System.Drawing.Point(557, 26);
+            this.groupBox1.Location = new System.Drawing.Point(460, 26);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(242, 65);
+            this.groupBox1.Size = new System.Drawing.Size(339, 65);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             // 
@@ -191,12 +202,24 @@ namespace MarabComSal
             this.Lbl_Welcome.Size = new System.Drawing.Size(0, 13);
             this.Lbl_Welcome.TabIndex = 2;
             // 
-            // modifyAndDeleteToolStripMenuItem
+            // Lbl_Welcomeuser
             // 
-            this.modifyAndDeleteToolStripMenuItem.Name = "modifyAndDeleteToolStripMenuItem";
-            this.modifyAndDeleteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.modifyAndDeleteToolStripMenuItem.Text = "Modify and Delete";
-            this.modifyAndDeleteToolStripMenuItem.Click += new System.EventHandler(this.modifyAndDeleteToolStripMenuItem_Click);
+            this.Lbl_Welcomeuser.AutoSize = true;
+            this.Lbl_Welcomeuser.Font = new System.Drawing.Font("Monotype Corsiva", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.Lbl_Welcomeuser.Location = new System.Drawing.Point(3, 8);
+            this.Lbl_Welcomeuser.Name = "Lbl_Welcomeuser";
+            this.Lbl_Welcomeuser.Size = new System.Drawing.Size(100, 26);
+            this.Lbl_Welcomeuser.TabIndex = 4;
+            this.Lbl_Welcomeuser.Text = "Welcome !";
+            // 
+            // Lbl_user
+            // 
+            this.Lbl_user.AutoSize = true;
+            this.Lbl_user.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_user.Location = new System.Drawing.Point(145, 10);
+            this.Lbl_user.Name = "Lbl_user";
+            this.Lbl_user.Size = new System.Drawing.Size(0, 22);
+            this.Lbl_user.TabIndex = 5;
             // 
             // EmployeeHomepage
             // 
@@ -237,6 +260,8 @@ namespace MarabComSal
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem modifyAndDeleteToolStripMenuItem;
+        private System.Windows.Forms.Label Lbl_Welcomeuser;
+        private System.Windows.Forms.Label Lbl_user;
     }
 }
 
