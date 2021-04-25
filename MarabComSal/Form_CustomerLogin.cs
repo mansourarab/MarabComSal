@@ -33,8 +33,8 @@ namespace MarabComSal
                 lbl_status.Text = "Loggied in Successfully!";
 
                 Class_Login.AccountId = AccountId;
-
-                EmployeeHomepage Hform = new EmployeeHomepage();
+                
+                CustomerHomepage Hform = new EmployeeHomepage();
                 this.Close();
                 Hform.Show();
 
