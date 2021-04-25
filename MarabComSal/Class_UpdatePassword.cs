@@ -31,6 +31,7 @@ namespace MarabComSal
             que.Parameters.AddWithValue("@newpassword", newpassword);
             que.Parameters.AddWithValue("@accountid", accountid);
             que.Parameters.Add("@returned", SqlDbType.Int).Direction = ParameterDirection.ReturnValue;
+            que.ExecuteNonQuery();
             int returned = (int)que.Parameters["@returned"].Value;
 
             channel.Close();
