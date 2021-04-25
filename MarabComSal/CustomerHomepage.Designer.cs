@@ -73,8 +73,9 @@ namespace MarabComSal
             // 
             this.viewToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.viewToolStripMenuItem1.Name = "viewToolStripMenuItem1";
-            this.viewToolStripMenuItem1.Size = new System.Drawing.Size(117, 22);
+            this.viewToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.viewToolStripMenuItem1.Text = "View";
+            this.viewToolStripMenuItem1.Click += new System.EventHandler(this.viewToolStripMenuItem1_Click);
             // 
             // updateToolStripMenuItem1
             // 
@@ -83,26 +84,27 @@ namespace MarabComSal
             this.contactInfoToolStripMenuItem});
             this.updateToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.updateToolStripMenuItem1.Name = "updateToolStripMenuItem1";
-            this.updateToolStripMenuItem1.Size = new System.Drawing.Size(117, 22);
+            this.updateToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.updateToolStripMenuItem1.Text = "Update";
             // 
             // updatePasswordEmailToolStripMenuItem
             // 
             this.updatePasswordEmailToolStripMenuItem.Name = "updatePasswordEmailToolStripMenuItem";
-            this.updatePasswordEmailToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.updatePasswordEmailToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.updatePasswordEmailToolStripMenuItem.Text = "Password";
+            this.updatePasswordEmailToolStripMenuItem.Click += new System.EventHandler(this.updatePasswordEmailToolStripMenuItem_Click_1);
             // 
             // contactInfoToolStripMenuItem
             // 
             this.contactInfoToolStripMenuItem.Name = "contactInfoToolStripMenuItem";
-            this.contactInfoToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.contactInfoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.contactInfoToolStripMenuItem.Text = "Contact Info";
             // 
             // logOutToolStripMenuItem1
             // 
             this.logOutToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.logOutToolStripMenuItem1.Name = "logOutToolStripMenuItem1";
-            this.logOutToolStripMenuItem1.Size = new System.Drawing.Size(117, 22);
+            this.logOutToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.logOutToolStripMenuItem1.Text = "Log Out";
             // 
             // ordersToolStripMenuItem
@@ -174,6 +176,7 @@ namespace MarabComSal
             this.Controls.Add(this.menuStrip1);
             this.Name = "CustomerHomepage";
             this.Text = "CustomerHomepage";
+            this.Load += new System.EventHandler(this.CustomerHomepage_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
