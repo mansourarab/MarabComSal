@@ -24,7 +24,7 @@ namespace MarabComSal
 
         private void Btn_Login_Click(object sender, EventArgs e)
         {
-            Class_EmployeeLogin newlogin = new Class_EmployeeLogin();
+            Class_Login newlogin = new Class_Login();
             int? AccountId;
             int result = newlogin.CheckUser(Tb_Username.Text, Tb_Password.Text, out AccountId);
             if (result == 1)
@@ -32,7 +32,7 @@ namespace MarabComSal
                 Lbl_Status.ForeColor = System.Drawing.Color.Green;
                 Lbl_Status.Text = "Loggied in Successfully!";
 
-                Class_EmployeeLogin.AccountId = AccountId;
+                Class_Login.AccountId = AccountId;
 
                 Homepage Hform = new Homepage();
                 this.Close();

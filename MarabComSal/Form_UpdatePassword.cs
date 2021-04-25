@@ -26,7 +26,7 @@ namespace MarabComSal
         {
             Class_UpdatePassword update = new Class_UpdatePassword();
 
-            int returned = update.UpdatePassword(Tb_OldpassData.Text, Tb_NewpassData.Text, Class_CustomerLogin.AccountId);
+            int returned = update.UpdatePassword(Tb_OldpassData.Text, Tb_NewpassData.Text, Class_Login.AccountId);
             if (returned == 0)
             {
                 Lbl_status.ForeColor = System.Drawing.Color.Red;

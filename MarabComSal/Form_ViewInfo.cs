@@ -21,10 +21,10 @@ namespace MarabComSal
         private void Form_ViewInfo_Load(object sender, EventArgs e)
         {
 
-            if (Class_CustomerLogin.AccountId != null)
+            if (Class_Login.AccountId != null)
             {
                 Class_Info view = new Class_Info();
-                DataTable data = view.ViewInfo(Class_CustomerLogin.AccountId);
+                DataTable data = view.ViewInfo(Class_Login.AccountId);
                 if (data.Rows.Count != 0)
                 {
                     dataGridView1.DataSource = data;
