@@ -92,13 +92,14 @@ namespace MarabComSal
             this.updatePasswordEmailToolStripMenuItem.Name = "updatePasswordEmailToolStripMenuItem";
             this.updatePasswordEmailToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.updatePasswordEmailToolStripMenuItem.Text = "Password";
-            
+            this.updatePasswordEmailToolStripMenuItem.Click += new System.EventHandler(this.updatePasswordEmailToolStripMenuItem_Click_1);
             // 
             // contactInfoToolStripMenuItem
             // 
             this.contactInfoToolStripMenuItem.Name = "contactInfoToolStripMenuItem";
             this.contactInfoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.contactInfoToolStripMenuItem.Text = "Contact Info";
+            this.contactInfoToolStripMenuItem.Click += new System.EventHandler(this.contactInfoToolStripMenuItem_Click_1);
             // 
             // logOutToolStripMenuItem1
             // 
@@ -106,6 +107,7 @@ namespace MarabComSal
             this.logOutToolStripMenuItem1.Name = "logOutToolStripMenuItem1";
             this.logOutToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.logOutToolStripMenuItem1.Text = "Log Out";
+            this.logOutToolStripMenuItem1.Click += new System.EventHandler(this.logOutToolStripMenuItem1_Click_1);
             // 
             // ordersToolStripMenuItem
             // 

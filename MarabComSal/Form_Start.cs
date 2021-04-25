@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MarabComSal
 {
-    public partial class Form_UserTypeInfo : Form
+    public partial class Form_Start : Form
     {
-        public Form_UserTypeInfo()
+        public Form_Start()
         {
             InitializeComponent();
         }
@@ -24,14 +24,14 @@ namespace MarabComSal
 
         private void Btn_Employee_Click(object sender, EventArgs e)
         {
-            Form_EmployeeLogin newlogin = new Form_EmployeeLogin();
+            Form_Login newlogin = new Form_Login();
             newlogin.Show();
             
         }
 
         private void Btn_Customer_Click(object sender, EventArgs e)
         {
-            Form_CustomerLogin newlogin = new Form_CustomerLogin();
+            Form_Login newlogin = new Form_Login();
             newlogin.Show();
 
         }

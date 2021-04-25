@@ -62,7 +62,7 @@ namespace MarabComSal
                 if (CustomerNewAccount != 0)
                 {
                     MessageBox.Show("Your account was Created successfully!");
-                    Form_CustomerLogin forwardtologin = new Form_CustomerLogin();
+                    Form_Login forwardtologin = new Form_Login();
                     this.Close();
                     forwardtologin.Show();
                 }
@@ -71,7 +71,7 @@ namespace MarabComSal
 
         private void btn_back_Click(object sender, EventArgs e)
         {
-            Form_CustomerLogin backtologin = new Form_CustomerLogin();
+            Form_Login backtologin = new Form_Login();
             this.Close();
             backtologin.Show();
 

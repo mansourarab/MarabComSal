@@ -1,7 +1,7 @@
 ﻿
 namespace MarabComSal
 {
-    partial class Form_CustomerLogin
+    partial class Form_Login
     {
         /// <summary>
         /// Required designer variable.
@@ -59,7 +59,7 @@ namespace MarabComSal
             this.Gb_Cuslog.Size = new System.Drawing.Size(445, 277);
             this.Gb_Cuslog.TabIndex = 2;
             this.Gb_Cuslog.TabStop = false;
-            this.Gb_Cuslog.Text = "Customer Login Info";
+            this.Gb_Cuslog.Text = "Login Info";
             // 
             // Btn_Back
             // 
@@ -147,14 +147,14 @@ namespace MarabComSal
             this.Lbl_Username.TabIndex = 0;
             this.Lbl_Username.Text = "Username:";
             // 
-            // Form_CustomerLogin
+            // Form_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Gb_Cuslog);
-            this.Name = "Form_CustomerLogin";
-            this.Text = "Form_CustomerNewAccount";
+            this.Name = "Form_Login";
+            this.Text = "Form_Login";
             this.Load += new System.EventHandler(this.Form_CustomerLogin_Load);
             this.Gb_Cuslog.ResumeLayout(false);
             this.Gb_Cuslog.PerformLayout();

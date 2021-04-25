@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace MarabComSal
 {
-    public partial class Form_EmployeeLogin : Form
+    public partial class Form_Login : Form
     {
-        public Form_EmployeeLogin()
+        public Form_Login()
         {
             InitializeComponent();
         }
 
-        private void Form_EmployeeLogin_Load(object sender, EventArgs e)
+        private void Form_CustomerLogin_Load(object sender, EventArgs e)
         {
 
         }
@@ -27,11 +27,11 @@ namespace MarabComSal
             Class_Login newlogin = new Class_Login();
             int? AccountId;
             string UserType;
-            int result = newlogin.CheckUser(Tb_Username.Text, Tb_Password.Text, out AccountId, out UserType);
+            int result =newlogin.CheckUser(Tb_Username.Text, Tb_Password.Text, out AccountId, out UserType);
             if (result == 1)
             {
-                Lbl_Status.ForeColor = System.Drawing.Color.Green;
-                Lbl_Status.Text = "Loggied in Successfully!";
+                lbl_status.ForeColor = System.Drawing.Color.Green;
+                lbl_status.Text = "Loggied in Successfully!";
 
                 Class_Login.AccountId = AccountId;
                 Class_Login.UserType = UserType;
@@ -50,12 +50,11 @@ namespace MarabComSal
                     Hform.Show();
                 }
 
-
             }
             else
             {
-                Lbl_Status.ForeColor = System.Drawing.Color.Red;
-                Lbl_Status.Text = "Invalid Info";
+                lbl_status.ForeColor = System.Drawing.Color.Red;
+                lbl_status.Text = "Invalid Info";
             }
         }
 
@@ -64,6 +63,14 @@ namespace MarabComSal
             
             this.Close();
             
+            
+        }
+
+        private void Linlbl_Newaccount_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form_CustomerNewAccount newaccount = new Form_CustomerNewAccount();
+            this.Close();
+            newaccount.Show();
 
         }
     }

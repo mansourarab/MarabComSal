@@ -81,11 +81,11 @@
     <Compile Include="EmployeeHomepage.Designer.cs">
       <DependentUpon>EmployeeHomepage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_CustomerLogin.cs">
+    <Compile Include="Form_Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_CustomerLogin.Designer.cs">
-      <DependentUpon>Form_CustomerLogin.cs</DependentUpon>
+    <Compile Include="Form_Login.Designer.cs">
+      <DependentUpon>Form_Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_CustomerNewAccount.cs">
       <SubType>Form</SubType>
@@ -93,23 +93,17 @@
     <Compile Include="Form_CustomerNewAccount.Designer.cs">
       <DependentUpon>Form_CustomerNewAccount.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_EmployeeLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_EmployeeLogin.Designer.cs">
-      <DependentUpon>Form_EmployeeLogin.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form_EmployeeNewAccount.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form_EmployeeNewAccount.Designer.cs">
       <DependentUpon>Form_EmployeeNewAccount.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_UserTypeInfo.cs">
+    <Compile Include="Form_Start.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_UserTypeInfo.Designer.cs">
-      <DependentUpon>Form_UserTypeInfo.cs</DependentUpon>
+    <Compile Include="Form_Start.Designer.cs">
+      <DependentUpon>Form_Start.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -119,14 +113,11 @@
     <EmbeddedResource Include="Form_UpdateContactInfo.resx">
       <DependentUpon>Form_UpdateContactInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_CustomerLogin.resx">
-      <DependentUpon>Form_CustomerLogin.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Login.resx">
+      <DependentUpon>Form_Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_CustomerNewAccount.resx">
       <DependentUpon>Form_CustomerNewAccount.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form_EmployeeLogin.resx">
-      <DependentUpon>Form_EmployeeLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_EmployeeNewAccount.resx">
       <DependentUpon>Form_EmployeeNewAccount.cs</DependentUpon>
@@ -134,8 +125,8 @@
     <EmbeddedResource Include="Form_UpdatePassword.resx">
       <DependentUpon>Form_UpdatePassword.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_UserTypeInfo.resx">
-      <DependentUpon>Form_UserTypeInfo.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Start.resx">
+      <DependentUpon>Form_Start.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_ViewInfo.resx">
       <DependentUpon>Form_ViewInfo.cs</DependentUpon>
