@@ -23,11 +23,24 @@ namespace MarabComSal
            
         }
 
+<<<<<<< HEAD
         private void viewToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Form_ViewInfo newrequest = new Form_ViewInfo();
             newrequest.Show();
             this.Close();
         }
+||||||| d164739
+
+=======
+        private void viewToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form_ViewInfo window = new Form_ViewInfo();
+            window.Show();
+            this.Close();
+
+             
+        }
+>>>>>>> trials
     }
 }
