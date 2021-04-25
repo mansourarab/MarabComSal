@@ -33,15 +33,23 @@ namespace MarabComSal
              
         }
 
-        private void logOutToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
+        
         private void updatePasswordEmailToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form_UpdatePassword change = new Form_UpdatePassword();
             change.Show();
+            this.Close();
+        }
+
+        private void contactInfoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_ContactInfo update = new Form_ContactInfo();
+            update.Show();
+            this.Close();
+        }
+
+        private void logOutToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
     }

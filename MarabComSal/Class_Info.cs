@@ -39,6 +39,26 @@ namespace MarabComSal
             channel.Close();
             return dt;
         }
-    
+
+
+        public int UpdateContactinfo(string phone, string address, int? accountid)
+        {
+            channel.Open();
+
+            que.CommandText = "SP_UpdateContactInfo";// proc Name
+            que.CommandType = CommandType.StoredProcedure;
+            que.Connection = channel;
+            que.Parameters.AddWithValue("@phone", phone);
+            que.Parameters.AddWithValue("@address", address);
+            que.Parameters.AddWithValue("@accountid", accountid);
+            que.Parameters.Add("@returned", SqlDbType.Int).Direction = ParameterDirection.ReturnValue;
+            que.ExecuteNonQuery();
+            int returned = (int)que.Parameters["@returned"].Value;
+
+            channel.Close();
+            return returned;
+
+        }
+
     }
 }

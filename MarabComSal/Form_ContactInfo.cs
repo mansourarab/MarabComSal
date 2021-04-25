@@ -17,9 +17,30 @@ namespace MarabComSal
             InitializeComponent();
         }
 
+
+
         private void Form_ContactInfo_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Btn_Savechanges_Click(object sender, EventArgs e)
+        {
+            Class_Info updateinfo = new Class_Info();
+            int returned = updateinfo.UpdateContactinfo(Tb_PhoneData.Text, Tb_AddressData.Text, Class_Login.AccountId);
+            
+            if (returned != null)
+            {
+                Lbl_Status.ForeColor = System.Drawing.Color.Green;
+                Lbl_Status.Text = "Changes were Saved Successfully!";
+            }
+        }
+
+        private void Btn_Back_Click(object sender, EventArgs e)
+        {
+            Homepage backto = new Homepage();
+            backto.Show();
+            this.Close();
         }
     }
 }

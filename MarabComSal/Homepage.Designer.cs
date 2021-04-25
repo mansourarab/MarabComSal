@@ -107,6 +107,7 @@ namespace MarabComSal
             this.contactInfoToolStripMenuItem.Name = "contactInfoToolStripMenuItem";
             this.contactInfoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.contactInfoToolStripMenuItem.Text = "Contact Info";
+            this.contactInfoToolStripMenuItem.Click += new System.EventHandler(this.contactInfoToolStripMenuItem_Click);
             // 
             // logOutToolStripMenuItem1
             // 

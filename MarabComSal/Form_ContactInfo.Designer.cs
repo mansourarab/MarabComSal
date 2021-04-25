@@ -61,7 +61,7 @@ namespace MarabComSal
             // 
             this.Lbl_Status.AutoSize = true;
             this.Lbl_Status.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.Lbl_Status.Location = new System.Drawing.Point(150, 121);
+            this.Lbl_Status.Location = new System.Drawing.Point(30, 122);
             this.Lbl_Status.Name = "Lbl_Status";
             this.Lbl_Status.Size = new System.Drawing.Size(0, 17);
             this.Lbl_Status.TabIndex = 6;
@@ -75,6 +75,7 @@ namespace MarabComSal
             this.Btn_Back.TabIndex = 5;
             this.Btn_Back.Text = "Back";
             this.Btn_Back.UseVisualStyleBackColor = true;
+            this.Btn_Back.Click += new System.EventHandler(this.Btn_Back_Click);
             // 
             // Btn_Savechanges
             // 
@@ -85,6 +86,7 @@ namespace MarabComSal
             this.Btn_Savechanges.TabIndex = 4;
             this.Btn_Savechanges.Text = "Save Changes";
             this.Btn_Savechanges.UseVisualStyleBackColor = true;
+            this.Btn_Savechanges.Click += new System.EventHandler(this.Btn_Savechanges_Click);
             // 
             // Tb_AddressData
             // 
