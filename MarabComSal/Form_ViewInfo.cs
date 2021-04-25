@@ -33,14 +33,13 @@ namespace MarabComSal
             
         }
 
-        private void Btn_Back_Click(object sender, EventArgs e)
+        
+
+        private void Btn_Back_Click_1(object sender, EventArgs e)
         {
             Homepage backto = new Homepage();
             backto.Show();
             this.Close();
         }
-
-        
-
     }
 }

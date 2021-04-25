@@ -30,18 +30,16 @@ namespace MarabComSal
         private void InitializeComponent()
         {
             this.Gb_Userinfo = new System.Windows.Forms.GroupBox();
-
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Btn_Back = new System.Windows.Forms.Button();
-
             this.Gb_Userinfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // Gb_Userinfo
             // 
-            this.Gb_Userinfo.Controls.Add(this.dataGridView1);
             this.Gb_Userinfo.Controls.Add(this.Btn_Back);
+            this.Gb_Userinfo.Controls.Add(this.dataGridView1);
             this.Gb_Userinfo.Font = new System.Drawing.Font("Tahoma", 14F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))));
             this.Gb_Userinfo.Location = new System.Drawing.Point(93, 65);
@@ -51,8 +49,6 @@ namespace MarabComSal
             this.Gb_Userinfo.TabStop = false;
             this.Gb_Userinfo.Text = "User Info";
             // 
-
-
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
@@ -73,19 +69,18 @@ namespace MarabComSal
             this.dataGridView1.ShowEditingIcon = false;
             this.dataGridView1.Size = new System.Drawing.Size(1315, 97);
             this.dataGridView1.TabIndex = 9;
-
+            // 
             // Btn_Back
             // 
-            this.Btn_Back.Font = new System.Drawing.Font("Tahoma", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.Btn_Back.Location = new System.Drawing.Point(572, 159);
+            this.Btn_Back.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.Btn_Back.Location = new System.Drawing.Point(584, 142);
             this.Btn_Back.Name = "Btn_Back";
-            this.Btn_Back.Size = new System.Drawing.Size(85, 28);
-            this.Btn_Back.TabIndex = 8;
+            this.Btn_Back.Size = new System.Drawing.Size(86, 33);
+            this.Btn_Back.TabIndex = 10;
             this.Btn_Back.Text = "Back";
             this.Btn_Back.UseVisualStyleBackColor = true;
-
-            
-
+            this.Btn_Back.Click += new System.EventHandler(this.Btn_Back_Click_1);
+            // 
             // Form_ViewInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -104,7 +99,7 @@ namespace MarabComSal
         #endregion
 
         private System.Windows.Forms.GroupBox Gb_Userinfo;
-        private System.Windows.Forms.Button Btn_Back;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button Btn_Back;
     }
 }

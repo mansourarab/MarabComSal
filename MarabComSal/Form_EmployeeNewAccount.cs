@@ -50,7 +50,7 @@ namespace MarabComSal
 
             else
             {
-                Class_EmployeeNewAccount newaccount = new Class_EmployeeNewAccount();
+                Class_NewAccount newaccount = new Class_NewAccount();
                 int EmployeeNewAccount = newaccount.EmployeeNewAccount(Tb_Fullname.Text, Rbtn_Male.Checked, Tb_Phone.Text, Tb_Address.Text, Tb_Username.Text, Tb_Password.Text, Tb_Email.Text, Tb_Department.Text);
 
                 if (EmployeeNewAccount != 0)

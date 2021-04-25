@@ -56,7 +56,7 @@ namespace MarabComSal
 
             else
             {
-                Class_CustomerNewAccount newacc = new Class_CustomerNewAccount();
+                Class_NewAccount newacc = new Class_NewAccount();
                 int CustomerNewAccount = newacc.CustomerNewAccount(tb_fullname.Text, Rbtn_Male.Checked, tb_phone.Text, tb_address.Text, Tb_Username.Text, tb_password.Text, Tb_Email.Text);
 
                 if (CustomerNewAccount != 0)
