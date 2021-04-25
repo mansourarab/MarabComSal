@@ -55,9 +55,35 @@ namespace MarabComSal
 
         private void createToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Form_EmployeeNewAccount newaccount = new Form_EmployeeNewAccount();
-            newaccount.Show();
-            this.Close();
+            if (Class_Login.UserType == "Adminstrator")
+            {
+                Form_EmployeeNewAccount newaccount = new Form_EmployeeNewAccount();
+                newaccount.Show();
+                this.Close();
+            }
+
+            else
+            {
+                MessageBox.Show("You're not authorised for this task");
+                
+            }
+
+        }
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Class_Login.UserType == "Adminstrator")
+            {
+                Form_EmployeeNewAccount newaccount = new Form_EmployeeNewAccount();
+                newaccount.Show();
+                this.Close();
+            }
+
+            else
+            {
+                MessageBox.Show("You're not authorised for this task");
+
+            }
         }
     }
 }

@@ -65,9 +65,9 @@ namespace MarabComSal
 
         private void Btn_Back_Click(object sender, EventArgs e)
         {
-            Form_Login backtologin = new Form_Login();
+            EmployeeHomepage backto = new EmployeeHomepage();
             this.Close();
-            backtologin.Show();
+            backto.Show();
         }
 
         private void Form_EmployeeNewAccount_Load(object sender, EventArgs e)

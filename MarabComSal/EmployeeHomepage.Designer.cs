@@ -81,7 +81,7 @@ namespace MarabComSal
             // 
             this.viewToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.viewToolStripMenuItem1.Name = "viewToolStripMenuItem1";
-            this.viewToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.viewToolStripMenuItem1.Size = new System.Drawing.Size(117, 22);
             this.viewToolStripMenuItem1.Text = "View";
             this.viewToolStripMenuItem1.Click += new System.EventHandler(this.viewToolStripMenuItem1_Click);
             // 
@@ -92,20 +92,20 @@ namespace MarabComSal
             this.contactInfoToolStripMenuItem});
             this.updateToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.updateToolStripMenuItem1.Name = "updateToolStripMenuItem1";
-            this.updateToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.updateToolStripMenuItem1.Size = new System.Drawing.Size(117, 22);
             this.updateToolStripMenuItem1.Text = "Update";
             // 
             // updatePasswordEmailToolStripMenuItem
             // 
             this.updatePasswordEmailToolStripMenuItem.Name = "updatePasswordEmailToolStripMenuItem";
-            this.updatePasswordEmailToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.updatePasswordEmailToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.updatePasswordEmailToolStripMenuItem.Text = "Password";
             this.updatePasswordEmailToolStripMenuItem.Click += new System.EventHandler(this.updatePasswordEmailToolStripMenuItem_Click);
             // 
             // contactInfoToolStripMenuItem
             // 
             this.contactInfoToolStripMenuItem.Name = "contactInfoToolStripMenuItem";
-            this.contactInfoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.contactInfoToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.contactInfoToolStripMenuItem.Text = "Contact Info";
             this.contactInfoToolStripMenuItem.Click += new System.EventHandler(this.contactInfoToolStripMenuItem_Click);
             // 
@@ -113,7 +113,7 @@ namespace MarabComSal
             // 
             this.logOutToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.logOutToolStripMenuItem1.Name = "logOutToolStripMenuItem1";
-            this.logOutToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.logOutToolStripMenuItem1.Size = new System.Drawing.Size(117, 22);
             this.logOutToolStripMenuItem1.Text = "Log Out";
             this.logOutToolStripMenuItem1.Click += new System.EventHandler(this.logOutToolStripMenuItem1_Click);
             // 
@@ -179,8 +179,9 @@ namespace MarabComSal
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.deleteToolStripMenuItem.Text = "Delete";
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
             // manageOrdersToolStripMenuItem
             // 
@@ -232,7 +233,7 @@ namespace MarabComSal
             this.Lbl_Welcome.Size = new System.Drawing.Size(0, 13);
             this.Lbl_Welcome.TabIndex = 2;
             // 
-            // Homepage
+            // EmployeeHomepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -240,7 +241,7 @@ namespace MarabComSal
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Homepage";
+            this.Name = "EmployeeHomepage";
             this.Text = "Marab Company Homepage";
             this.Load += new System.EventHandler(this.Homepage_Load);
             this.menuStrip1.ResumeLayout(false);
