@@ -17,5 +17,17 @@ namespace MarabComSal
             InitializeComponent();
         }
 
+
+
+        private void Form_ModifyAccount_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Accounts_Click(object sender, EventArgs e)
+        {
+            bool account = true;
+
+        }
     }   
 }

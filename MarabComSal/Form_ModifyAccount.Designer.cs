@@ -42,32 +42,41 @@ namespace MarabComSal
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.Btn_Save = new System.Windows.Forms.Button();
+            this.Btn_Back = new System.Windows.Forms.Button();
+            this.Tb_Username = new System.Windows.Forms.TextBox();
+            this.Tb_fullname = new System.Windows.Forms.TextBox();
+            this.Tb_Address = new System.Windows.Forms.TextBox();
+            this.Tb_Phone = new System.Windows.Forms.TextBox();
+            this.Tb_Gender = new System.Windows.Forms.TextBox();
+            this.Tb_Department = new System.Windows.Forms.TextBox();
+            this.Tb_CompanyEmail = new System.Windows.Forms.TextBox();
+            this.Tb_Delete = new System.Windows.Forms.TextBox();
+            this.Tb_Adminusername = new System.Windows.Forms.TextBox();
+            this.Tb_AdminPassword = new System.Windows.Forms.TextBox();
+            this.Dgv_Acc = new System.Windows.Forms.DataGridView();
+            this.Dgv_Cus = new System.Windows.Forms.DataGridView();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.Dgv_Emp = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             this.Gb_Modify.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Acc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Cus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Emp)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox7);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.Tb_CompanyEmail);
+            this.groupBox1.Controls.Add(this.Tb_Department);
+            this.groupBox1.Controls.Add(this.Tb_Gender);
+            this.groupBox1.Controls.Add(this.Tb_Phone);
+            this.groupBox1.Controls.Add(this.Tb_Address);
+            this.groupBox1.Controls.Add(this.Tb_fullname);
+            this.groupBox1.Controls.Add(this.Tb_Username);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
@@ -85,7 +94,7 @@ namespace MarabComSal
             // 
             // Gb_Modify
             // 
-            this.Gb_Modify.Controls.Add(this.textBox8);
+            this.Gb_Modify.Controls.Add(this.Tb_Delete);
             this.Gb_Modify.Controls.Add(this.Lbl_Deleteusername);
             this.Gb_Modify.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.Gb_Modify.Location = new System.Drawing.Point(138, 398);
@@ -107,8 +116,8 @@ namespace MarabComSal
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox10);
-            this.groupBox2.Controls.Add(this.textBox9);
+            this.groupBox2.Controls.Add(this.Tb_AdminPassword);
+            this.groupBox2.Controls.Add(this.Tb_Adminusername);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
@@ -209,115 +218,180 @@ namespace MarabComSal
             this.label9.TabIndex = 7;
             this.label9.Text = "Company Email:";
             // 
-            // button1
+            // Btn_Save
             // 
-            this.button1.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(499, 656);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Save Changes!";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Btn_Save.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.Btn_Save.Location = new System.Drawing.Point(499, 656);
+            this.Btn_Save.Name = "Btn_Save";
+            this.Btn_Save.Size = new System.Drawing.Size(101, 23);
+            this.Btn_Save.TabIndex = 4;
+            this.Btn_Save.Text = "Save Changes!";
+            this.Btn_Save.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // Btn_Back
             // 
-            this.button2.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
-            this.button2.Location = new System.Drawing.Point(156, 656);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(101, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Back";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Btn_Back.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.Btn_Back.Location = new System.Drawing.Point(156, 656);
+            this.Btn_Back.Name = "Btn_Back";
+            this.Btn_Back.Size = new System.Drawing.Size(101, 23);
+            this.Btn_Back.TabIndex = 5;
+            this.Btn_Back.Text = "Back";
+            this.Btn_Back.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // Tb_Username
             // 
-            this.textBox1.Location = new System.Drawing.Point(195, 58);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(177, 27);
-            this.textBox1.TabIndex = 8;
+            this.Tb_Username.Location = new System.Drawing.Point(195, 58);
+            this.Tb_Username.Name = "Tb_Username";
+            this.Tb_Username.Size = new System.Drawing.Size(177, 27);
+            this.Tb_Username.TabIndex = 8;
             // 
-            // textBox2
+            // Tb_fullname
             // 
-            this.textBox2.Location = new System.Drawing.Point(195, 90);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(177, 27);
-            this.textBox2.TabIndex = 9;
+            this.Tb_fullname.Location = new System.Drawing.Point(195, 90);
+            this.Tb_fullname.Name = "Tb_fullname";
+            this.Tb_fullname.Size = new System.Drawing.Size(177, 27);
+            this.Tb_fullname.TabIndex = 9;
             // 
-            // textBox3
+            // Tb_Address
             // 
-            this.textBox3.Location = new System.Drawing.Point(195, 127);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(177, 27);
-            this.textBox3.TabIndex = 10;
+            this.Tb_Address.Location = new System.Drawing.Point(195, 127);
+            this.Tb_Address.Name = "Tb_Address";
+            this.Tb_Address.Size = new System.Drawing.Size(177, 27);
+            this.Tb_Address.TabIndex = 10;
             // 
-            // textBox4
+            // Tb_Phone
             // 
-            this.textBox4.Location = new System.Drawing.Point(195, 166);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(177, 27);
-            this.textBox4.TabIndex = 11;
+            this.Tb_Phone.Location = new System.Drawing.Point(195, 166);
+            this.Tb_Phone.Name = "Tb_Phone";
+            this.Tb_Phone.Size = new System.Drawing.Size(177, 27);
+            this.Tb_Phone.TabIndex = 11;
             // 
-            // textBox5
+            // Tb_Gender
             // 
-            this.textBox5.Location = new System.Drawing.Point(195, 200);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(177, 27);
-            this.textBox5.TabIndex = 12;
+            this.Tb_Gender.Location = new System.Drawing.Point(195, 200);
+            this.Tb_Gender.Name = "Tb_Gender";
+            this.Tb_Gender.Size = new System.Drawing.Size(177, 27);
+            this.Tb_Gender.TabIndex = 12;
             // 
-            // textBox6
+            // Tb_Department
             // 
-            this.textBox6.Location = new System.Drawing.Point(195, 233);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(177, 27);
-            this.textBox6.TabIndex = 13;
+            this.Tb_Department.Location = new System.Drawing.Point(195, 233);
+            this.Tb_Department.Name = "Tb_Department";
+            this.Tb_Department.Size = new System.Drawing.Size(177, 27);
+            this.Tb_Department.TabIndex = 13;
             // 
-            // textBox7
+            // Tb_CompanyEmail
             // 
-            this.textBox7.Location = new System.Drawing.Point(195, 266);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(177, 27);
-            this.textBox7.TabIndex = 14;
+            this.Tb_CompanyEmail.Location = new System.Drawing.Point(195, 266);
+            this.Tb_CompanyEmail.Name = "Tb_CompanyEmail";
+            this.Tb_CompanyEmail.Size = new System.Drawing.Size(177, 27);
+            this.Tb_CompanyEmail.TabIndex = 14;
             // 
-            // textBox8
+            // Tb_Delete
             // 
-            this.textBox8.Location = new System.Drawing.Point(195, 36);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(177, 27);
-            this.textBox8.TabIndex = 15;
+            this.Tb_Delete.Location = new System.Drawing.Point(195, 36);
+            this.Tb_Delete.Name = "Tb_Delete";
+            this.Tb_Delete.Size = new System.Drawing.Size(177, 27);
+            this.Tb_Delete.TabIndex = 15;
             // 
-            // textBox9
+            // Tb_Adminusername
             // 
-            this.textBox9.Location = new System.Drawing.Point(230, 40);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(177, 27);
-            this.textBox9.TabIndex = 16;
+            this.Tb_Adminusername.Location = new System.Drawing.Point(230, 40);
+            this.Tb_Adminusername.Name = "Tb_Adminusername";
+            this.Tb_Adminusername.Size = new System.Drawing.Size(177, 27);
+            this.Tb_Adminusername.TabIndex = 16;
             // 
-            // textBox10
+            // Tb_AdminPassword
             // 
-            this.textBox10.Location = new System.Drawing.Point(230, 76);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(177, 27);
-            this.textBox10.TabIndex = 17;
+            this.Tb_AdminPassword.Location = new System.Drawing.Point(230, 76);
+            this.Tb_AdminPassword.Name = "Tb_AdminPassword";
+            this.Tb_AdminPassword.Size = new System.Drawing.Size(177, 27);
+            this.Tb_AdminPassword.TabIndex = 17;
+            // 
+            // Dgv_Acc
+            // 
+            this.Dgv_Acc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_Acc.Location = new System.Drawing.Point(652, 36);
+            this.Dgv_Acc.Name = "Dgv_Acc";
+            this.Dgv_Acc.Size = new System.Drawing.Size(798, 154);
+            this.Dgv_Acc.TabIndex = 6;
+            // 
+            // Dgv_Cus
+            // 
+            this.Dgv_Cus.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_Cus.Location = new System.Drawing.Point(652, 288);
+            this.Dgv_Cus.Name = "Dgv_Cus";
+            this.Dgv_Cus.Size = new System.Drawing.Size(798, 153);
+            this.Dgv_Cus.TabIndex = 7;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.label10.Location = new System.Drawing.Point(1009, 9);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(113, 17);
+            this.label10.TabIndex = 8;
+            this.label10.Text = "Accounts Table";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.label11.Location = new System.Drawing.Point(1009, 246);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(117, 17);
+            this.label11.TabIndex = 9;
+            this.label11.Text = "Customer Table";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.label12.Location = new System.Drawing.Point(1009, 456);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(116, 17);
+            this.label12.TabIndex = 11;
+            this.label12.Text = "Employee Table";
+            // 
+            // Dgv_Emp
+            // 
+            this.Dgv_Emp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_Emp.Location = new System.Drawing.Point(652, 498);
+            this.Dgv_Emp.Name = "Dgv_Emp";
+            this.Dgv_Emp.Size = new System.Drawing.Size(798, 153);
+            this.Dgv_Emp.TabIndex = 10;
             // 
             // Form_ModifyAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1398, 705);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1462, 705);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.Dgv_Emp);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.Dgv_Cus);
+            this.Controls.Add(this.Dgv_Acc);
+            this.Controls.Add(this.Btn_Back);
+            this.Controls.Add(this.Btn_Save);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.Gb_Modify);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form_ModifyAccount";
             this.Text = "Form_ModifyAccount";
+            this.Load += new System.EventHandler(this.Form_ModifyAccount_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.Gb_Modify.ResumeLayout(false);
             this.Gb_Modify.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Acc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Cus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Emp)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -336,17 +410,23 @@ namespace MarabComSal
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Button Btn_Save;
+        private System.Windows.Forms.Button Btn_Back;
+        private System.Windows.Forms.TextBox Tb_CompanyEmail;
+        private System.Windows.Forms.TextBox Tb_Department;
+        private System.Windows.Forms.TextBox Tb_Gender;
+        private System.Windows.Forms.TextBox Tb_Phone;
+        private System.Windows.Forms.TextBox Tb_Address;
+        private System.Windows.Forms.TextBox Tb_fullname;
+        private System.Windows.Forms.TextBox Tb_Username;
+        private System.Windows.Forms.TextBox Tb_Delete;
+        private System.Windows.Forms.TextBox Tb_AdminPassword;
+        private System.Windows.Forms.TextBox Tb_Adminusername;
+        private System.Windows.Forms.DataGridView Dgv_Acc;
+        private System.Windows.Forms.DataGridView Dgv_Cus;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.DataGridView Dgv_Emp;
     }
 }

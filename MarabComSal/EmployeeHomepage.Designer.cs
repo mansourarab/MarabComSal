@@ -36,20 +36,16 @@ namespace MarabComSal
             this.updatePasswordEmailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contactInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.ordersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.createToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.modifyOrCancelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adminstratorAuthoritiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.newEmployeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.createToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manageOrdersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.createToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.modifyAndCancelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Lbl_Welcome = new System.Windows.Forms.Label();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -58,8 +54,8 @@ namespace MarabComSal
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.myProfileToolStripMenuItem,
-            this.ordersToolStripMenuItem,
-            this.adminstratorAuthoritiesToolStripMenuItem});
+            this.adminstratorAuthoritiesToolStripMenuItem,
+            this.toolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -117,87 +113,23 @@ namespace MarabComSal
             this.logOutToolStripMenuItem1.Text = "Log Out";
             this.logOutToolStripMenuItem1.Click += new System.EventHandler(this.logOutToolStripMenuItem1_Click);
             // 
-            // ordersToolStripMenuItem
-            // 
-            this.ordersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.createToolStripMenuItem,
-            this.viewToolStripMenuItem,
-            this.modifyOrCancelToolStripMenuItem});
-            this.ordersToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.ordersToolStripMenuItem.Name = "ordersToolStripMenuItem";
-            this.ordersToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
-            this.ordersToolStripMenuItem.Text = "Orders";
-            // 
-            // createToolStripMenuItem
-            // 
-            this.createToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.createToolStripMenuItem.Name = "createToolStripMenuItem";
-            this.createToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
-            this.createToolStripMenuItem.Text = "Create";
-            // 
-            // viewToolStripMenuItem
-            // 
-            this.viewToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
-            this.viewToolStripMenuItem.Text = "View";
-            // 
-            // modifyOrCancelToolStripMenuItem
-            // 
-            this.modifyOrCancelToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.modifyOrCancelToolStripMenuItem.Name = "modifyOrCancelToolStripMenuItem";
-            this.modifyOrCancelToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
-            this.modifyOrCancelToolStripMenuItem.Text = "Modify or Cancel";
-            // 
             // adminstratorAuthoritiesToolStripMenuItem
             // 
             this.adminstratorAuthoritiesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newEmployeeToolStripMenuItem,
             this.manageOrdersToolStripMenuItem});
             this.adminstratorAuthoritiesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.adminstratorAuthoritiesToolStripMenuItem.Name = "adminstratorAuthoritiesToolStripMenuItem";
-            this.adminstratorAuthoritiesToolStripMenuItem.Size = new System.Drawing.Size(158, 20);
-            this.adminstratorAuthoritiesToolStripMenuItem.Text = "Adminstrator Authorities";
-            // 
-            // newEmployeeToolStripMenuItem
-            // 
-            this.newEmployeeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.createToolStripMenuItem1,
-            this.deleteToolStripMenuItem});
-            this.newEmployeeToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.newEmployeeToolStripMenuItem.Name = "newEmployeeToolStripMenuItem";
-            this.newEmployeeToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.newEmployeeToolStripMenuItem.Text = "Employees Accounts";
-            // 
-            // createToolStripMenuItem1
-            // 
-            this.createToolStripMenuItem1.Name = "createToolStripMenuItem1";
-            this.createToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.createToolStripMenuItem1.Text = "Create";
-            this.createToolStripMenuItem1.Click += new System.EventHandler(this.createToolStripMenuItem1_Click);
-            // 
-            // deleteToolStripMenuItem
-            // 
-            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.deleteToolStripMenuItem.Text = "Modify and Delete";
-            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
+            this.adminstratorAuthoritiesToolStripMenuItem.Size = new System.Drawing.Size(105, 20);
+            this.adminstratorAuthoritiesToolStripMenuItem.Text = "Employee Tasks";
             // 
             // manageOrdersToolStripMenuItem
             // 
             this.manageOrdersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.createToolStripMenuItem2,
             this.modifyAndCancelToolStripMenuItem});
             this.manageOrdersToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.manageOrdersToolStripMenuItem.Name = "manageOrdersToolStripMenuItem";
-            this.manageOrdersToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.manageOrdersToolStripMenuItem.Text = "Manage Orders";
-            // 
-            // createToolStripMenuItem2
-            // 
-            this.createToolStripMenuItem2.Name = "createToolStripMenuItem2";
-            this.createToolStripMenuItem2.Size = new System.Drawing.Size(174, 22);
-            this.createToolStripMenuItem2.Text = "Create";
+            this.manageOrdersToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
+            this.manageOrdersToolStripMenuItem.Text = "Manage Orders (In Progress)";
             // 
             // modifyAndCancelToolStripMenuItem
             // 
@@ -233,6 +165,37 @@ namespace MarabComSal
             this.Lbl_Welcome.Size = new System.Drawing.Size(0, 13);
             this.Lbl_Welcome.TabIndex = 2;
             // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem2});
+            this.toolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(158, 20);
+            this.toolStripMenuItem1.Text = "Adminstrator Authorities";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem3,
+            this.toolStripMenuItem4});
+            this.toolStripMenuItem2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(184, 22);
+            this.toolStripMenuItem2.Text = "Employees Accounts";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem3.Text = "Create";
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem4.Text = "Modify and Delete";
+            // 
             // EmployeeHomepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -257,25 +220,21 @@ namespace MarabComSal
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem myProfileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ordersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem updateToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem updatePasswordEmailToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem contactInfoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem createToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem modifyOrCancelToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem adminstratorAuthoritiesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem newEmployeeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem createToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem manageOrdersToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem createToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem modifyAndCancelToolStripMenuItem;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label Lbl_Welcome;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
     }
 }
 

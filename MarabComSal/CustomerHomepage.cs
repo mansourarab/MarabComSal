@@ -54,5 +54,10 @@ namespace MarabComSal
             update.Show();
             this.Close();
         }
+
+        private void ordersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
