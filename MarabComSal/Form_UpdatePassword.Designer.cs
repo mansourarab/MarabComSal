@@ -90,6 +90,7 @@ namespace MarabComSal
             this.Btn_Back.TabIndex = 4;
             this.Btn_Back.Text = "Back";
             this.Btn_Back.UseVisualStyleBackColor = true;
+            this.Btn_Back.Click += new System.EventHandler(this.Btn_Back_Click);
             // 
             // Btn_Savechanges
             // 
@@ -100,6 +101,7 @@ namespace MarabComSal
             this.Btn_Savechanges.TabIndex = 3;
             this.Btn_Savechanges.Text = "Save Changes";
             this.Btn_Savechanges.UseVisualStyleBackColor = true;
+            this.Btn_Savechanges.Click += new System.EventHandler(this.Btn_Savechanges_Click);
             // 
             // Lbl_Enternewpass
             // 
@@ -129,6 +131,7 @@ namespace MarabComSal
             this.Controls.Add(this.Gb_Updatepassword);
             this.Name = "Form_UpdatePassword";
             this.Text = "Form_UpdatePassword";
+            this.Load += new System.EventHandler(this.Form_UpdatePassword_Load);
             this.Gb_Updatepassword.ResumeLayout(false);
             this.Gb_Updatepassword.PerformLayout();
             this.ResumeLayout(false);

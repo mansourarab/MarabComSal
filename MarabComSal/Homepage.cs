@@ -23,16 +23,7 @@ namespace MarabComSal
            
         }
 
-<<<<<<< HEAD
-        private void viewToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Form_ViewInfo newrequest = new Form_ViewInfo();
-            newrequest.Show();
-            this.Close();
-        }
-||||||| d164739
 
-=======
         private void viewToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Form_ViewInfo window = new Form_ViewInfo();
@@ -41,6 +32,17 @@ namespace MarabComSal
 
              
         }
->>>>>>> trials
+
+        private void logOutToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void updatePasswordEmailToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_UpdatePassword change = new Form_UpdatePassword();
+            change.Show();
+            this.Close();
+        }
     }
 }

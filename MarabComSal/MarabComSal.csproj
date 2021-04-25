@@ -53,6 +53,7 @@
     <Compile Include="Class_EmployeeLogin.cs" />
     <Compile Include="Class_EmployeeNewAccount.cs" />
     <Compile Include="Class_Info.cs" />
+    <Compile Include="Class_UpdatePassword.cs" />
     <Compile Include="Form_ContactInfo.cs">
       <SubType>Form</SubType>
     </Compile>

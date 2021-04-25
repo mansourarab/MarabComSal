@@ -16,17 +16,7 @@ namespace MarabComSal
         {
             InitializeComponent();
         }
-<<<<<<< HEAD
 
-        private void Form_ViewInfo_Load(object sender, EventArgs e)
-        {
-            Class_CustomerLogin newid = new Class_CustomerLogin();
-            int? AID;
-            int result = acc.CheckUserExists(txtUserName.Text, txtPassword.Text, out SID);
-        }
-||||||| d164739
-=======
-        Class_CustomerLogin catsh = new Class_CustomerLogin();
          
         private void Form_ViewInfo_Load(object sender, EventArgs e)
         {
@@ -61,6 +51,6 @@ namespace MarabComSal
         }
 
         
->>>>>>> trials
+
     }
 }

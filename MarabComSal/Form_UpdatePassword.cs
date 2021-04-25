@@ -16,5 +16,40 @@ namespace MarabComSal
         {
             InitializeComponent();
         }
+
+        private void Form_UpdatePassword_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Btn_Savechanges_Click(object sender, EventArgs e)
+        {
+            Class_UpdatePassword update = new Class_UpdatePassword();
+
+            int returned = update.UpdatePassword(Tb_OldpassData.Text, Tb_NewpassData.Text, Class_CustomerLogin.AccountId);
+            if (returned == 0)
+            {
+                Lbl_status.ForeColor = System.Drawing.Color.Red;
+                Lbl_status.Text = "Please Enter Your Correct Old Password";
+                Tb_OldpassData.Text = null;
+                Tb_NewpassData.Text = null;
+
+            }
+
+            else
+            {
+                Lbl_status.ForeColor = System.Drawing.Color.Green;
+                Lbl_status.Text = "Changes were saved!";
+                Tb_OldpassData.Text = null;
+                Tb_NewpassData.Text = null;
+            }
+        }
+
+        private void Btn_Back_Click(object sender, EventArgs e)
+        {
+            Homepage backto = new Homepage();
+            backto.Show();
+            this.Close();
+        }
     }
 }
