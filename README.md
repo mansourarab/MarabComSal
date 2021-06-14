@@ -1,7 +1,7 @@
 # MarabComSal
 
 This project was a part of ASP.NET MVC Core Program.
-The project was to create a Windows Forms Application for Customer Goods Distrubutin company.
+The project was to create a Windows Forms Application for Customer Goods Distrubution company.
 
 The Company name is Marab Company.
 
